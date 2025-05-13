@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "FirstName": "John",
+    "LastName": "Doe",
+    "Grades": [
+      {
+        "Id": 1,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2023-05-10T00:00:00",
+        "Comments": "Excellent performance",
+        "StudentId": 0
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "FirstName": "Jane",
+    "LastName": "Smith",
+    "Grades": [
+      {
+        "Id": 2,
+        "GradeValue": 4,
+        "Subject": "Science",
+        "Date": "2023-04-20T00:00:00",
+        "Comments": "Good progress",
+        "StudentId": 0
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "FirstName": "Kacper",
+    "LastName": "Wolski",
+    "Grades": []
+  }
+]
