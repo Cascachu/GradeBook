@@ -7,6 +7,7 @@ namespace GradeBook.Models
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public Class Class { get; set; } 
         public List<Grade> Grades { get; set; } = new List<Grade>();
     }
 }
