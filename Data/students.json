@@ -3,14 +3,15 @@
     "Id": 1,
     "FirstName": "John",
     "LastName": "Doe",
+    "Class": "A1",
     "Grades": [
       {
         "Id": 1,
         "GradeValue": 5,
         "Subject": "Mathematics",
         "Date": "2023-05-10T00:00:00",
-        "Comments": "Excellent performance",
-        "StudentId": 0
+        "Description": "Excellent performance",
+        "StudentId": 1
       }
     ]
   },
@@ -18,14 +19,15 @@
     "Id": 2,
     "FirstName": "Jane",
     "LastName": "Smith",
+    "Class": "A1",
     "Grades": [
       {
         "Id": 2,
         "GradeValue": 4,
         "Subject": "Science",
         "Date": "2023-04-20T00:00:00",
-        "Comments": "Good progress",
-        "StudentId": 0
+        "Description": "Good progress",
+        "StudentId": 2
       }
     ]
   },
@@ -33,6 +35,48 @@
     "Id": 3,
     "FirstName": "Kacper",
     "LastName": "Wolski",
-    "Grades": []
+    "Class": "A1",
+    "Grades": [
+      {
+        "Id": 1,
+        "GradeValue": 6,
+        "Subject": "Chemistry",
+        "Date": "2025-05-15T00:00:00",
+        "Description": "cooking meth",
+        "StudentId": 3
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "FirstName": "Dawid",
+    "LastName": "Borowik",
+    "Class": "E2",
+    "Grades": [
+      {
+        "Id": 1,
+        "GradeValue": 1,
+        "Subject": "Chemistry",
+        "Date": "2025-05-15T00:00:00",
+        "Description": "cooking meth",
+        "StudentId": 4
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "FirstName": "Micha\u0142",
+    "LastName": "Mamot",
+    "Class": "D5",
+    "Grades": [
+      {
+        "Id": 1,
+        "GradeValue": 2,
+        "Subject": "Physics",
+        "Date": "2025-05-07T00:00:00",
+        "Description": "Quantum Entanglement Test",
+        "StudentId": 5
+      }
+    ]
   }
 ]

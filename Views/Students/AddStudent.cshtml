@@ -11,5 +11,15 @@
         <label for="LastName">Last Name</label>
         <input type="text" id="LastName" name="LastName" />
     </div>
+    <div>
+        <label for="Class">Class</label>
+        <select id="Class" name="Class">
+            @foreach (var c in Enum.GetValues(typeof(GradeBook.Models.Class)))
+            {
+                <option value="@c">@c</option>
+            }
+        </select>
+    </div>
     <button type="submit">Add</button>
+
 </form>

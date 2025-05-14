@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 using GradeBook.Models;
 
 namespace GradeBook.Services
@@ -6,19 +7,27 @@ namespace GradeBook.Services
     
     
 
-    public class JsonDataService
+public class JsonDataService
     {
         private readonly string _filePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "students.json");
 
         public List<Student> GetStudents()
         {
             var jsonData = File.ReadAllText(_filePath);
-            return JsonSerializer.Deserialize<List<Student>>(jsonData) ?? new List<Student>();
+            var options = new JsonSerializerOptions();
+            options.Converters.Add(new JsonStringEnumConverter());
+            return JsonSerializer.Deserialize<List<Student>>(jsonData, options) ?? new List<Student>();
         }
 
         public void SaveStudents(List<Student> students)
         {
-            var jsonData = JsonSerializer.Serialize(students, new JsonSerializerOptions { WriteIndented = true });
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true
+            };
+            options.Converters.Add(new JsonStringEnumConverter()); 
+
+            var jsonData = JsonSerializer.Serialize(students, options);
             File.WriteAllText(_filePath, jsonData);
         }
     }

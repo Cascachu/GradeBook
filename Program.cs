@@ -6,9 +6,9 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddSingleton<JsonDataService>(); // Add your data service
+        builder.Services.AddSingleton<JsonDataService>();
 
-        builder.Services.AddControllersWithViews(); // Add MVC controllers and views
+        builder.Services.AddControllersWithViews(); 
 
         var app = builder.Build();
 
@@ -26,10 +26,9 @@ public class Program
         app.UseStaticFiles();
         app.UseRouting();
 
-        // Change the default route to point to StudentsController and Index action
         app.MapControllerRoute(
             name: "default",
-            pattern: "{controller=Students}/{action=Index}/{id?}"); // <-- Modify this line
+            pattern: "{controller=Students}/{action=Index}/{id?}"); 
 
         app.Run();
     }
