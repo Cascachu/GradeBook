@@ -3,8 +3,24 @@
 <ul>
     @foreach (var student in Model)
     {
+        var grades = student.Grades ?? new List<GradeBook.Models.Grade>();
+        var hasGrades = grades.Any();
+        var avg = hasGrades ? grades.Average(g => g.GradeValue) : 0;
+        var min = hasGrades ? grades.Min(g => g.GradeValue) : 0;
+        var max = hasGrades ? grades.Max(g => g.GradeValue) : 0;
+        var minComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == min).Select(g => g.Description)) : "-";
+        var maxComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == max).Select(g => g.Description)) : "-";
         <li>
-            @student.FirstName @student.LastName
+            <a href="@Url.Action("EditGrades", "Grades", new { studentId = student.Id })">
+                @student.FirstName @student.LastName
+            </a>
+            <br />
+            Grade average: @(hasGrades ? avg.ToString("0.00") : "-")
+            <br />
+            Lowest grade: @(hasGrades ? min.ToString() : "-") (Comment: @minComments)
+            <br />
+            Highest grade: @(hasGrades ? max.ToString() : "-") (Comment: @maxComments)
+            <br />
             <a href="@Url.Action("AddGrade", "Grades", new { studentId = student.Id })">Add Grade</a>
         </li>
     }
