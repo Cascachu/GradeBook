@@ -1,28 +1,41 @@
-@model GradeBook.Models.Student
-
-<h2>Grades for @Model.FirstName @Model.LastName</h2>
-<table>
-    <tr>
-        <th>Subject</th>
-        <th>Grade</th>
-        <th>Date</th>
-        <th>Description</th>
-        <th>Actions</th>
-    </tr>
-    @foreach (var grade in Model.Grades)
-    {
+﻿@model GradeBook.Models.Student
+<head>
+    <meta charset="utf-8" />
+    <title>Grades</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
+    <main>
+    <h2>Grades for @Model.FirstName @Model.LastName</h2>
+    <table>
         <tr>
-            <td>@grade.Subject</td>
-            <td>@grade.GradeValue</td>
-            <td>@grade.Date.ToShortDateString()</td>
-            <td>@grade.Description</td>
-            <td>
-                <a href="@Url.Action("EditGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })">Edit</a>
-                |
-                <a href="@Url.Action("DeleteGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })" onclick="return confirm('Are you sure you want to delete this grade?');">Delete</a>
-            </td>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Actions</th>
         </tr>
-    }
-</table>
-<a href="@Url.Action("AddGrade", "Grades", new { studentId = Model.Id })">Add Grade</a>
-<a href="@Url.Action("Index", "Students")">Back</a>
+        @foreach (var grade in Model.Grades)
+        {
+            <tr>
+                <td>@grade.Subject</td>
+                <td class="grade">@grade.GradeValue</td>
+                <td>@grade.Date.ToShortDateString()</td>
+                <td>@grade.Description</td>
+                <td>
+                    <a href="@Url.Action("EditGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })">Edit</a>
+                    |
+                    <a href="@Url.Action("DeleteGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })" onclick="return confirm('Are you sure you want to delete this grade?');">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <a href="@Url.Action("AddGrade", "Grades", new { studentId = Model.Id })">Add Grade</a>
+    <a href="@Url.Action("Index", "Students")">Back</a>
+    </main>
+</body>
+<script src="@Url.Content("~/js/jumper.js")"></script>
+<script src="@Url.Content("~/js/gradeColor.js")"></script>
+

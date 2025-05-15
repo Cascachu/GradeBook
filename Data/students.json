@@ -172,6 +172,30 @@
         "Date": "2025-05-20T00:00:00",
         "Description": "Organic chemistry lab report",
         "StudentId": 5
+      },
+      {
+        "Id": 4,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2025-05-15T00:00:00",
+        "Description": "WW1",
+        "StudentId": 5
+      },
+      {
+        "Id": 5,
+        "GradeValue": 3,
+        "Subject": "English",
+        "Date": "2025-05-14T00:00:00",
+        "Description": "Vocabulary test",
+        "StudentId": 5
+      },
+      {
+        "Id": 6,
+        "GradeValue": 6,
+        "Subject": "PE",
+        "Date": "2025-05-16T00:00:00",
+        "Description": "Running",
+        "StudentId": 5
       }
     ]
   }

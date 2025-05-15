@@ -1,25 +1,41 @@
 ﻿@model GradeBook.Models.Student
+<head>
+    <meta charset="utf-8" />
+    <title>Grades</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
 
-<h2>Add Student</h2>
+    <main>
+        <h2>Add Student</h2>
 
-<form method="post">
-    <div>
-        <label for="FirstName">First Name</label>
-        <input type="text" id="FirstName" name="FirstName" />
-    </div>
-    <div>
-        <label for="LastName">Last Name</label>
-        <input type="text" id="LastName" name="LastName" />
-    </div>
-    <div>
-        <label for="Class">Class</label>
-        <select id="Class" name="Class">
-            @foreach (var c in Enum.GetValues(typeof(GradeBook.Models.Class)))
-            {
-                <option value="@c">@c</option>
-            }
-        </select>
-    </div>
-    <button type="submit">Add</button>
+        <form method="post">
+            <div>
+                <label for="FirstName">First Name</label>
+                <input type="text" id="FirstName" name="FirstName" />
+            </div>
+            <div>
+                <label for="LastName">Last Name</label>
+                <input type="text" id="LastName" name="LastName" />
+            </div>
+            <div>
+                <label for="Class">Class</label>
+                <select id="Class" name="Class">
+                    @foreach (var c in Enum.GetValues(typeof(GradeBook.Models.Class)))
+                    {
+                        <option value="@c">@c</option>
+                    }
+                </select>
+            </div>
+            <button type="submit">Add</button>
+            <a href="@Url.Action("Index", "Students")">Back</a>
 
-</form>
+        </form>
+
+    </main>
+    <script src="@Url.Content("~/js/jumper.js")"></script>
+
+</body>
+
