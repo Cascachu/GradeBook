@@ -10,7 +10,23 @@
         "GradeValue": 5,
         "Subject": "Mathematics",
         "Date": "2023-05-10T00:00:00",
-        "Description": "Excellent performance",
+        "Description": "Algebra midterm test",
+        "StudentId": 1
+      },
+      {
+        "Id": 2,
+        "GradeValue": 4,
+        "Subject": "Physics",
+        "Date": "2023-06-15T00:00:00",
+        "Description": "Mechanics quiz",
+        "StudentId": 1
+      },
+      {
+        "Id": 3,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2023-07-01T00:00:00",
+        "Description": "Organic chemistry lab report",
         "StudentId": 1
       }
     ]
@@ -22,11 +38,27 @@
     "Class": "A1",
     "Grades": [
       {
-        "Id": 2,
+        "Id": 1,
         "GradeValue": 4,
         "Subject": "Science",
         "Date": "2023-04-20T00:00:00",
-        "Description": "Good progress",
+        "Description": "Biology chapter test",
+        "StudentId": 2
+      },
+      {
+        "Id": 2,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2023-05-18T00:00:00",
+        "Description": "Geometry project",
+        "StudentId": 2
+      },
+      {
+        "Id": 3,
+        "GradeValue": 3,
+        "Subject": "English",
+        "Date": "2023-06-10T00:00:00",
+        "Description": "Essay on Shakespeare",
         "StudentId": 2
       }
     ]
@@ -39,7 +71,7 @@
     "Grades": [
       {
         "Id": 1,
-        "GradeValue": 1,
+        "GradeValue": 5,
         "Subject": "History",
         "Date": "2025-05-01T00:00:00",
         "Description": "WW1",
@@ -52,6 +84,30 @@
         "Date": "2025-05-24T00:00:00",
         "Description": "WW2",
         "StudentId": 3
+      },
+      {
+        "Id": 3,
+        "GradeValue": 3,
+        "Subject": "Math",
+        "Date": "2025-03-13T00:00:00",
+        "Description": "Geometry",
+        "StudentId": 3
+      },
+      {
+        "Id": 5,
+        "GradeValue": 5,
+        "Subject": "Chemistry",
+        "Date": "2025-05-22T00:00:00",
+        "Description": "Metals",
+        "StudentId": 3
+      },
+      {
+        "Id": 6,
+        "GradeValue": 6,
+        "Subject": "Game Theory",
+        "Date": "2077-12-09T00:00:00",
+        "Description": "CyberPunk",
+        "StudentId": 3
       }
     ]
   },
@@ -60,7 +116,32 @@
     "FirstName": "Dawid",
     "LastName": "Borowik",
     "Class": "E2",
-    "Grades": []
+    "Grades": [
+      {
+        "Id": 1,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2024-09-15T00:00:00",
+        "Description": "Algebra quiz",
+        "StudentId": 4
+      },
+      {
+        "Id": 2,
+        "GradeValue": 3,
+        "Subject": "English",
+        "Date": "2024-10-01T00:00:00",
+        "Description": "Vocabulary test",
+        "StudentId": 4
+      },
+      {
+        "Id": 3,
+        "GradeValue": 4,
+        "Subject": "Biology",
+        "Date": "2024-11-12T00:00:00",
+        "Description": "Cell structure project",
+        "StudentId": 4
+      }
+    ]
   },
   {
     "Id": 5,
@@ -73,7 +154,23 @@
         "GradeValue": 2,
         "Subject": "Physics",
         "Date": "2025-05-07T00:00:00",
-        "Description": "Quantum Entanglement Test",
+        "Description": "Quantum entanglement test",
+        "StudentId": 5
+      },
+      {
+        "Id": 2,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2025-05-15T00:00:00",
+        "Description": "Algebra final exam",
+        "StudentId": 5
+      },
+      {
+        "Id": 3,
+        "GradeValue": 4,
+        "Subject": "Chemistry",
+        "Date": "2025-05-20T00:00:00",
+        "Description": "Organic chemistry lab report",
         "StudentId": 5
       }
     ]

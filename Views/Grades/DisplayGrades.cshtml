@@ -1,0 +1,28 @@
+@model GradeBook.Models.Student
+
+<h2>Grades for @Model.FirstName @Model.LastName</h2>
+<table>
+    <tr>
+        <th>Subject</th>
+        <th>Grade</th>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var grade in Model.Grades)
+    {
+        <tr>
+            <td>@grade.Subject</td>
+            <td>@grade.GradeValue</td>
+            <td>@grade.Date.ToShortDateString()</td>
+            <td>@grade.Description</td>
+            <td>
+                <a href="@Url.Action("EditGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })">Edit</a>
+                |
+                <a href="@Url.Action("DeleteGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })" onclick="return confirm('Are you sure you want to delete this grade?');">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+<a href="@Url.Action("AddGrade", "Grades", new { studentId = Model.Id })">Add Grade</a>
+<a href="@Url.Action("Index", "Students")">Back</a>
