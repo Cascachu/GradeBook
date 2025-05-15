@@ -1,28 +1,41 @@
 ﻿@model List<GradeBook.Models.Student>
-<h2>Students List</h2>
-<ul>
-    @foreach (var student in Model)
-    {
-        var grades = student.Grades ?? new List<GradeBook.Models.Grade>();
-        var hasGrades = grades.Any();
-        var avg = hasGrades ? grades.Average(g => g.GradeValue) : 0;
-        var min = hasGrades ? grades.Min(g => g.GradeValue) : 0;
-        var max = hasGrades ? grades.Max(g => g.GradeValue) : 0;
-        var minComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == min).Select(g => g.Description)) : "-";
-        var maxComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == max).Select(g => g.Description)) : "-";
-        <li>
-            <a href="@Url.Action("DisplayGrades", "Grades", new { studentId = student.Id })">
-                @student.FirstName @student.LastName
-            </a>
-            <br />
-            Grade average: @(hasGrades ? avg.ToString("0.00") : "-")
-            <br />
-            Lowest grade: @(hasGrades ? min.ToString() : "-") (Comment: @minComments)
-            <br />
-            Highest grade: @(hasGrades ? max.ToString() : "-") (Comment: @maxComments)
-            <br />
-            <a href="@Url.Action("AddGrade", "Grades", new { studentId = student.Id })">Add Grade</a>
-        </li>
-    }
-</ul>
-<a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
+<head>
+    <meta charset="utf-8" />
+    <title>GradeBook</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
+    <main>
+        <h2>Students List</h2>
+        <ul>
+            @foreach (var student in Model)
+            {
+                var grades = student.Grades ?? new List<GradeBook.Models.Grade>();
+                var hasGrades = grades.Any();
+                var avg = hasGrades ? grades.Average(g => g.GradeValue) : 0;
+                var min = hasGrades ? grades.Min(g => g.GradeValue) : 0;
+                var max = hasGrades ? grades.Max(g => g.GradeValue) : 0;
+                var minComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == min).Select(g => g.Description)) : "-";
+                var maxComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == max).Select(g => g.Description)) : "-";
+                <li>
+                    <a href="@Url.Action("DisplayGrades", "Grades", new { studentId = student.Id })">
+                        @student.FirstName @student.LastName (@student.Class)
+                    </a>
+                    <br />
+                    Grade average: @(hasGrades? avg.ToString("0.00") : "-")
+                    <br />
+                    Lowest grade: <span class="grade">@(hasGrades ? min.ToString() : "-")</span> (Comment: @minComments)
+                    <br />
+                    Highest grade: <span class="grade">@(hasGrades ? max.ToString() : "-")</span> (Comment: @maxComments)
+                    <br />
+                </li>
+            }
+        </ul>
+        <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
+    </main>
+</body>
+<script src="@Url.Content("~/js/jumper.js")"></script>
+<script src="@Url.Content("~/js/gradeColor.js")"></script>
+

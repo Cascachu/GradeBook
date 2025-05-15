@@ -1,0 +1,110 @@
+﻿@font-face {
+    font-family: 'CaviarDreams';
+    src: url('/css/CaviarDreams.otf') format('truetype');
+}
+
+
+body {
+    z-index:0;
+  background-color: #0d1b2a; 
+  background-size: 80px 140px;
+  background-position:
+    0 0,
+    0 0,
+    40px 70px,
+    40px 70px,
+    0 0,
+    40px 70px;
+  background-image:
+    linear-gradient(30deg, #415a77 12%, transparent 12.5%, transparent 87%, #415a77 87.5%, #415a77),
+    linear-gradient(150deg, #415a77 12%, transparent 12.5%, transparent 87%, #415a77 87.5%, #415a77),
+    linear-gradient(30deg, #415a77 12%, transparent 12.5%, transparent 87%, #415a77 87.5%, #415a77),
+    linear-gradient(150deg, #415a77 12%, transparent 12.5%, transparent 87%, #415a77 87.5%, #415a77),
+    linear-gradient(60deg, #1b263b 25%, transparent 25.5%, transparent 75%, #1b263b 75.5%, #1b263b),
+    linear-gradient(60deg, #1b263b 25%, transparent 25.5%, transparent 75%, #1b263b 75.5%, #1b263b);
+}
+main {
+    z-index: 2;
+    position: relative;
+    background-color: rgba(11,15,23,0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #3CAEFF;
+    font-family: 'CaviarDreams','Comic Sans MS', cursive, sans-serif;
+    border: 5px solid #7a3399;
+    font-size: 150%;
+}
+
+a:link {
+    color: #7FD4FF;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:visited {
+    color: #7FD4FF;
+}
+a:hover {
+    color: #5AA9E6;
+}
+a:active {
+    color: #3A8BD4;
+}
+table {
+    font-size: 120%;
+    border: 3px solid #9B50B6;
+    border-radius: 5px;
+    border-collapse: collapse;
+    text-align: center;
+}
+td {
+    color: #3CAEFF;
+    padding: 10px;
+}
+th {
+    color: #6FC0FF;
+    padding: 10px;
+}
+form {
+    
+    font-size: 120%;
+}
+button {
+    background: none;
+    color: #7FD4FF;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 100%;
+    font-family: 'Milikah','Comic Sans MS', cursive, sans-serif;
+}
+    button:hover {
+        color: #5AA9E6;
+    }
+    button:active {
+        color: #3A8BD4;
+    }
+input {
+    background-color: #7a3399;
+    color: #7FD4FF;
+    border: 2px solid #7a4db3;
+    border-radius: 5px;
+    font-size: 120%;
+    font-family: 'Milikah','Comic Sans MS', cursive, sans-serif;
+}
+input:hover {
+    background-color: #7a4db3;
+}
+select {
+    background-color: #7a3399;
+    color: #7FD4FF;
+    border: 2px solid #7a4db3;
+    border-radius: 5px;
+    font-size: 120%;
+    font-family: 'Milikah','Comic Sans MS', cursive, sans-serif;
+}
+li {
+padding: 10px;
+
+}
