@@ -11,7 +11,7 @@
         var minComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == min).Select(g => g.Description)) : "-";
         var maxComments = hasGrades ? string.Join(", ", grades.Where(g => g.GradeValue == max).Select(g => g.Description)) : "-";
         <li>
-            <a href="@Url.Action("EditGrades", "Grades", new { studentId = student.Id })">
+            <a href="@Url.Action("DisplayGrades", "Grades", new { studentId = student.Id })">
                 @student.FirstName @student.LastName
             </a>
             <br />

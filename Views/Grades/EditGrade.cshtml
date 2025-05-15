@@ -1,0 +1,25 @@
+@model GradeBook.Models.Grade
+
+<h2>Edit Grade</h2>
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="hidden" name="StudentId" value="@Model.StudentId" />
+    <div>
+        <label for="Subject">Subject</label>
+        <input type="text" id="Subject" name="Subject" value="@Model.Subject" />
+    </div>
+    <div>
+        <label for="GradeValue">Grade</label>
+        <input type="number" id="GradeValue" name="GradeValue" value="@Model.GradeValue" />
+    </div>
+    <div>
+        <label for="Date">Date</label>
+        <input type="date" id="Date" name="Date" value="@Model.Date.ToString("yyyy-MM-dd")" />
+    </div>
+    <div>
+        <label for="Description">Description</label>
+        <input type="text" id="Description" name="Description" value="@Model.Description" />
+    </div>
+    <button type="submit">Save</button>
+    <a href="@Url.Action("DisplayGrades", "Grades", new { studentId = Model.StudentId })">Cancel</a>
+</form>
