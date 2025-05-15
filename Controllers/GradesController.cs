@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using GradeBook.Models;
 using GradeBook.Services;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace GradeBook.Controllers
 {
@@ -35,5 +36,16 @@ namespace GradeBook.Controllers
             return RedirectToAction("Index", "Students");
         }
 
+        public IActionResult EditGrades(int studentId)
+        {
+            var student = _jsonDataService.GetStudents().FirstOrDefault(s => s.Id == studentId);
+            if (student == null)
+                return NotFound();
+
+            student.Grades ??= new List<Grade>();
+            return View(student);
+        }
+
+        
     }
 }

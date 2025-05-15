@@ -39,10 +39,18 @@
     "Grades": [
       {
         "Id": 1,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2025-05-01T00:00:00",
+        "Description": "WW1",
+        "StudentId": 3
+      },
+      {
+        "Id": 2,
         "GradeValue": 6,
-        "Subject": "Chemistry",
-        "Date": "2025-05-15T00:00:00",
-        "Description": "cooking meth",
+        "Subject": "History",
+        "Date": "2025-05-24T00:00:00",
+        "Description": "WW2",
         "StudentId": 3
       }
     ]
@@ -52,16 +60,7 @@
     "FirstName": "Dawid",
     "LastName": "Borowik",
     "Class": "E2",
-    "Grades": [
-      {
-        "Id": 1,
-        "GradeValue": 1,
-        "Subject": "Chemistry",
-        "Date": "2025-05-15T00:00:00",
-        "Description": "cooking meth",
-        "StudentId": 4
-      }
-    ]
+    "Grades": []
   },
   {
     "Id": 5,
