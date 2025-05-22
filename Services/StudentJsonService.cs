@@ -7,9 +7,9 @@ namespace GradeBook.Services
     
     
 
-public class JsonDataService
+public class StudentJsonService
     {
-        private readonly string _filePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "students.json");
+        private readonly string _filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "Data", "students.json");
 
         public List<Student> GetStudents()
         {

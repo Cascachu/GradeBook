@@ -6,9 +6,9 @@ namespace GradeBook.Controllers
 {
     public class StudentsController : Controller
     {
-        private readonly JsonDataService _jsonDataService;
+        private readonly StudentJsonService _jsonDataService;
 
-        public StudentsController(JsonDataService jsonDataService)
+        public StudentsController(StudentJsonService jsonDataService)
         {
             _jsonDataService = jsonDataService;
         }

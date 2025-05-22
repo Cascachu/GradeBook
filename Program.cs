@@ -6,7 +6,7 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddSingleton<JsonDataService>();
+        builder.Services.AddSingleton<StudentJsonService>();
 
         builder.Services.AddControllersWithViews(); 
 

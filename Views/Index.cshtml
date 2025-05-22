@@ -1,6 +1,13 @@
 ﻿@model List<GradeBook.Models.Student>
+@using GradeBook.Models
+@using GradeBook.Services
 @{
     var role = Context.Session.GetString("Role");
+    List<User> users = null;
+    if (role == "Manager")
+    {
+        users = UserJsonService.LoadUsers();
+    }
 }
 <head>
     <meta charset="utf-8" />
@@ -41,6 +48,25 @@
             <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
         }
     </main>
+    @if (role == "Manager" && users != null)
+    {
+        <main>
+            <h2>Manager Actions</h2>
+            <ul>
+                <li>
+                    <ul>
+                        Users:
+                        @foreach (var user in users)
+                        {
+                            <li>
+                                @user.Email (@user.Role)
+                            </li>
+                        }
+                    </ul>
+                </li>
+            </ul>
+        </main>
+    }
 </body>
 <script src="@Url.Content("~/js/jumper.js")"></script>
 <script src="@Url.Content("~/js/gradeColor.js")"></script>

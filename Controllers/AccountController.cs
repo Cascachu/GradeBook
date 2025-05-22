@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using GradeBook.Models;
-using GradeBook.Data;
 using GradeBook.Utils;
+using GradeBook.Services;
 
 namespace GradeBook.Controllers
 {
@@ -14,24 +14,24 @@ namespace GradeBook.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(string Username, string Password, string Role)
+        public IActionResult Register(string Email, string Password, string Role)
         {
-            var users = UserStore.LoadUsers();
-            if (users.Any(u => u.Username == Username))
+            var users = UserJsonService.LoadUsers();
+            if (users.Any(u => u.Email == Email))
             {
-                ViewBag.Error = "Username already exists.";
-                return View(new User { Username = Username, Role = Role });
+                ViewBag.Error = "Email already exists.";
+                return View(new User { Email = Email, Role = Role });
             }
 
             var user = new User
             {
                 Id = users.Count > 0 ? users.Max(u => u.Id) + 1 : 1,
-                Username = Username,
+                Email = Email,
                 PasswordHash = PasswordHelper.HashPassword(Password),
                 Role = Role
             };
             users.Add(user);
-            UserStore.SaveUsers(users);
+            UserJsonService.SaveUsers(users);
             return RedirectToAction("Login");
         }
 
@@ -42,19 +42,19 @@ namespace GradeBook.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string Username, string Password)
+        public IActionResult Login(string Email, string Password)
         {
-            var users = UserStore.LoadUsers();
+            var users = UserJsonService.LoadUsers();
             var hash = PasswordHelper.HashPassword(Password);
-            var user = users.FirstOrDefault(u => u.Username == Username && u.PasswordHash == hash);
+            var user = users.FirstOrDefault(u => u.Email == Email && u.PasswordHash == hash);
 
             if (user == null)
             {
-                ViewBag.Error = "Invalid username or password.";
+                ViewBag.Error = "Invalid email or password.";
                 return View();
             }
 
-            HttpContext.Session.SetString("Username", user.Username);
+            HttpContext.Session.SetString("Email", user.Email);
             HttpContext.Session.SetString("Role", user.Role);
 
             return RedirectToAction("Index", "Students");

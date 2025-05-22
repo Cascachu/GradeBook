@@ -1,11 +1,11 @@
 using System.Text.Json;
 using GradeBook.Models;
 
-namespace GradeBook.Data
+namespace GradeBook.Services
 {
-    public static class UserStore
+    public static class UserJsonService
     {
-        private static readonly string FilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "users.json");
+        private static readonly string FilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..", "Data", "users.json");
 
         public static List<User> LoadUsers()
         {
