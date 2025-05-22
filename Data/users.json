@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Username": "Kacper",
+    "PasswordHash": "bztaBZoCryD2kkrr4I94jGY16j4a4DXcrpnX7f1Ebd4=",
+    "Role": "Teacher"
+  },
+  {
+    "Id": 2,
+    "Username": "Micha",
+    "PasswordHash": "WBLuUKcOY\u002B8A5wuOSySRkpKNRgGHgfMWzCFXiUECKw0=",
+    "Role": "Student"
+  },
+  {
+    "Id": 3,
+    "Username": "s",
+    "PasswordHash": "BDpxh3TFcr2KJa2\u002Bsb/NXAJWrhHOz5\u002BcP5JdDlK\u002Br4k=",
+    "Role": "Student"
+  }
+]

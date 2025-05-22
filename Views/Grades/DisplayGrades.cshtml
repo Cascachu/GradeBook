@@ -1,4 +1,7 @@
 ﻿@model GradeBook.Models.Student
+@{
+    var role = Context.Session.GetString("Role");
+}
 <head>
     <meta charset="utf-8" />
     <title>Grades</title>
@@ -15,7 +18,10 @@
             <th>Grade</th>
             <th>Date</th>
             <th>Description</th>
-            <th>Actions</th>
+            @if (role == "Teacher")
+            {
+                <th>Actions</th>      
+            }
         </tr>
         @foreach (var grade in Model.Grades)
         {
@@ -24,15 +30,22 @@
                 <td class="grade">@grade.GradeValue</td>
                 <td>@grade.Date.ToShortDateString()</td>
                 <td>@grade.Description</td>
-                <td>
-                    <a href="@Url.Action("EditGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })">Edit</a>
-                    |
-                    <a href="@Url.Action("DeleteGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })" onclick="return confirm('Are you sure you want to delete this grade?');">Delete</a>
-                </td>
+                
+                @if (role == "Teacher")
+                {   
+                    <td>
+                        <a href="@Url.Action("EditGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })">Edit</a>
+                        <a href="@Url.Action("DeleteGrade", "Grades", new { studentId = Model.Id, gradeId = grade.Id })" onclick="return confirm('Are you sure you want to delete this grade?');">Delete</a>
+                    </td>
+                }
+                
             </tr>
         }
     </table>
-    <a href="@Url.Action("AddGrade", "Grades", new { studentId = Model.Id })">Add Grade</a>
+    @if (role == "Teacher")
+    {
+        <a href="@Url.Action("AddGrade", "Grades", new { studentId = Model.Id })">Add Grade</a>
+    }
     <a href="@Url.Action("Index", "Students")">Back</a>
     </main>
 </body>

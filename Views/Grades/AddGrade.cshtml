@@ -1,4 +1,12 @@
 ﻿@model GradeBook.Models.Grade
+@{
+    var role = Context.Session.GetString("Role");
+    if (role != "Teacher")
+    {
+        <div style="color:red">Access denied. Only teachers can add grades.</div>
+        return;
+    }
+}
 <head>
     <meta charset="utf-8" />
     <title>Grades</title>

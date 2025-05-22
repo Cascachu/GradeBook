@@ -1,0 +1,42 @@
+﻿@model GradeBook.Models.User
+@{
+    ViewData["Title"] = "Register";
+    var error = ViewBag.Error as string;
+}
+<head>
+    <meta charset="utf-8" />
+    <title>GradeBook</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
+    <main>
+        <h2>Register</h2>
+        <form method="post">
+            <div>
+                <label for="Username">Username</label>
+                <input id="Username" name="Username" value="@Model?.Username" required />
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <input id="Password" name="Password" type="password" required />
+            </div>
+            <div>
+                <label for="Role">Role</label>
+                <select id="Role" name="Role">
+                    <option value="Student" selected>Student</option>
+                    <option value="Teacher">Teacher</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+            @if (!string.IsNullOrEmpty(error))
+            {
+                <div style="color:red">@error</div>
+            }
+        </form>
+        <a href="/Account/Login">Already have an account? Login</a>
+    </main>
+
+</body>
+<script src="@Url.Content("~/js/jumper.js")"></script>

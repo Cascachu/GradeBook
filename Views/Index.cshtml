@@ -1,4 +1,7 @@
 ﻿@model List<GradeBook.Models.Student>
+@{
+    var role = Context.Session.GetString("Role");
+}
 <head>
     <meta charset="utf-8" />
     <title>GradeBook</title>
@@ -33,9 +36,11 @@
                 </li>
             }
         </ul>
-        <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
+        @if (role == "Teacher")
+        {
+            <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
+        }
     </main>
 </body>
 <script src="@Url.Content("~/js/jumper.js")"></script>
 <script src="@Url.Content("~/js/gradeColor.js")"></script>
-

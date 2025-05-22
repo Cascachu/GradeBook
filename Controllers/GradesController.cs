@@ -3,6 +3,7 @@ using GradeBook.Models;
 using GradeBook.Services;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 
 namespace GradeBook.Controllers
 {
@@ -17,6 +18,8 @@ namespace GradeBook.Controllers
 
         public IActionResult AddGrade(int studentId)
         {
+            if (HttpContext.Session.GetString("Role") != "Teacher")
+                return Forbid();
             var grade = new Grade { StudentId = studentId };
             return View(grade);
         }
@@ -24,6 +27,9 @@ namespace GradeBook.Controllers
         [HttpPost]
         public IActionResult AddGrade(Grade grade)
         {
+            if (HttpContext.Session.GetString("Role") != "Teacher")
+                return Forbid();
+
             var students = _jsonDataService.GetStudents();
             var student = students.FirstOrDefault(s => s.Id == grade.StudentId);
             if (student == null)
@@ -48,6 +54,9 @@ namespace GradeBook.Controllers
 
         public IActionResult EditGrade(int studentId, int gradeId)
         {
+            if (HttpContext.Session.GetString("Role") != "Teacher")
+                return Forbid();
+
             var student = _jsonDataService.GetStudents().FirstOrDefault(s => s.Id == studentId);
             if (student == null)
                 return NotFound();
@@ -62,6 +71,9 @@ namespace GradeBook.Controllers
         [HttpPost]
         public IActionResult EditGrade(Grade grade)
         {
+            if (HttpContext.Session.GetString("Role") != "Teacher")
+                return Forbid();
+
             var students = _jsonDataService.GetStudents();
             var student = students.FirstOrDefault(s => s.Id == grade.StudentId);
             if (student == null)
@@ -83,6 +95,9 @@ namespace GradeBook.Controllers
 
         public IActionResult DeleteGrade(int studentId, int gradeId)
         {
+            if (HttpContext.Session.GetString("Role") != "Teacher")
+                return Forbid();
+
             var students = _jsonDataService.GetStudents();
             var student = students.FirstOrDefault(s => s.Id == studentId);
             if (student == null)
