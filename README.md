@@ -1,37 +1,36 @@
 # GradeBook
 
-GradeBook to aplikacja webowa oparta na technologii ASP.NET Core Razor Pages, s³u¿¹ca do zarz¹dzania ocenami uczniów. Projekt umo¿liwia ³atwe dodawanie, edytowanie oraz przegl¹danie ocen przypisanych do poszczególnych uczniów.
+GradeBook is a web application based on ASP.NET Core Razor Pages, designed for managing student grades. The project allows easy addition, editing, and viewing of grades assigned to individual students.
 
-## Funkcje
+## Features
 
-- Przegl¹danie listy ocen dla wybranego ucznia
-- Dodawanie nowych ocen (przedmiot, ocena, data, opis)
-- Edytowanie istniej¹cych ocen
-- Usuwanie ocen
-- Przejrzysty interfejs u¿ytkownika oparty na Razor Pages
+- View the list of grades for a selected student
+- Add new grades (subject, grade, date, description)
+- Edit existing grades
+- Delete grades
+- User-friendly interface based on Razor Pages
 
-## Wymagania
+## Requirements
 
 - .NET 9.0
-- Visual Studio 2022 lub nowszy
+- Visual Studio 2022 or newer
 
-## Instalacja
+## Installation
 
-1. Sklonuj repozytorium:
-2. Otwórz projekt w Visual Studio 2022.
-3. Przywróæ zale¿noœci NuGet.
-4. Uruchom aplikacjê (F5 lub __Debug > Start Debugging__).
+1. Clone the repository:
+2. Open the project in Visual Studio 2022.
+3. Restore NuGet dependencies.
+4. Run the application (F5 or __Debug > Start Debugging__).
 
-## Struktura projektu
+## Project Structure
 
-- `Models/` – modele domenowe, np. `Student`, `Grade`, `Class`
-- `Views/Grades/` – strony Razor do zarz¹dzania ocenami (`AddGrade`, `EditGrade`, `DisplayGrades`)
-- `wwwroot/` – zasoby statyczne (CSS, JS)
+- `Models/` â€“ domain models, e.g. `Student`, `Grade`, `Class`
+- `Views/Grades/` â€“ Razor Pages for grade management (`AddGrade`, `EditGrade`, `DisplayGrades`)
+- `wwwroot/` â€“ static assets (CSS, JS)
 
-## U¿ytkowanie
+## Usage
 
-Po uruchomieniu aplikacji:
-- Wybierz ucznia z listy.
-- Przegl¹daj, dodawaj, edytuj lub usuwaj oceny.
-- Ka¿da ocena zawiera przedmiot, wartoœæ oraz opcjonalny opis.
-
+After launching the application:
+- Select a student from the list.
+- View, add, edit, or delete grades.
+- Each grade includes a subject, value, and an optional description.
