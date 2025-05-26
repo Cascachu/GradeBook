@@ -65,5 +65,18 @@ namespace GradeBook.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Login");
         }
+
+        [HttpPost]
+        public IActionResult AssignStudentId(int userId, int? studentId)
+        {
+            var users = UserJsonService.LoadUsers();
+            var user = users.FirstOrDefault(u => u.Id == userId && u.Role == "Student");
+            if (user != null)
+            {
+                user.StudentId = studentId;
+                UserJsonService.SaveUsers(users);
+            }
+            return RedirectToAction("Index", "Students");
+        }
     }
 }

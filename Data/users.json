@@ -3,12 +3,21 @@
     "Id": 1,
     "Email": "kaper@mail.com",
     "PasswordHash": "bztaBZoCryD2kkrr4I94jGY16j4a4DXcrpnX7f1Ebd4=",
-    "Role": "Teacher"
+    "Role": "Teacher",
+    "StudentId": null
   },
   {
     "Id": 2,
-    "Email": "kapi@gmail.com",
-    "PasswordHash": "fl6jm4AU4eAU2WRiO09gklwLEynoDYzdq\u002BWXn4Cbqqw=",
-    "Role": "Student"
+    "Email": "kapi@mail.com",
+    "PasswordHash": "WBLuUKcOY\u002B8A5wuOSySRkpKNRgGHgfMWzCFXiUECKw0=",
+    "Role": "Student",
+    "StudentId": 3
+  },
+  {
+    "Id": 3,
+    "Email": "kacper@mail.com",
+    "PasswordHash": "bztaBZoCryD2kkrr4I94jGY16j4a4DXcrpnX7f1Ebd4=",
+    "Role": "Manager",
+    "StudentId": null
   }
 ]

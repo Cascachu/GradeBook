@@ -1,0 +1,59 @@
+﻿@model Tuple<List<GradeBook.Models.Student>, List<GradeBook.Models.User>>
+@{
+    var role = Context.Session.GetString("Role");
+    if (role != "Manager")
+    {
+        <div style="color:red">Access denied. Only managers can access this page.</div>
+        return;
+    }
+    
+    var students = Model.Item1;
+    var users = Model.Item2;
+}
+<head>
+    <meta charset="utf-8" />
+    <title>Manage Accounts</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
+    <main>
+        <h2>Manage User Accounts</h2>
+        <h3>Users Management</h3>
+        <ul>
+            @foreach (var user in users)
+            {
+                <li>
+                    @user.Email (@user.Role)
+                    @if (user.Role == "Student")
+                    {
+                        <form method="post" action="@Url.Action("AssignStudentId", "Managers")">
+                            <input type="hidden" name="userId" value="@user.Id" />
+                            <select name="studentId">
+                                <option value="">-- select student --</option>
+                                @foreach (var student in students)
+                                {
+                                    <option value="@student.Id" @(user.StudentId == student.Id ? "selected" : "")>
+                                        @student.FirstName @student.LastName (@student.Id)
+                                    </option>
+                                }
+                            </select>
+                            <button type="submit">Assign</button>
+                        </form>
+                        @if (user.StudentId != null)
+                        {
+                            var assignedStudent = students.FirstOrDefault(s => s.Id == user.StudentId);
+                            if (assignedStudent != null)
+                            {
+                                <span>Currently assigned: @assignedStudent.FirstName @assignedStudent.LastName</span>
+                            }
+                        }
+                    }
+                </li>
+            }
+        </ul>
+        <a href="@Url.Action("Index", "Students")">Back to students list</a>
+    </main>
+    <script src="@Url.Content("~/js/jumper.js")"></script>
+</body>

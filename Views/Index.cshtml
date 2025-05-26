@@ -3,10 +3,22 @@
 @using GradeBook.Services
 @{
     var role = Context.Session.GetString("Role");
+    var userEmail = Context.Session.GetString("Email");
+    
     List<User> users = null;
+    User currentUser = null;
+    int? studentIdForCurrentUser = null;
+    
     if (role == "Manager")
     {
         users = UserJsonService.LoadUsers();
+    }
+    
+    if (role == "Student" && !string.IsNullOrEmpty(userEmail))
+    {
+        var allUsers = UserJsonService.LoadUsers();
+        currentUser = allUsers.FirstOrDefault(u => u.Email == userEmail);
+        studentIdForCurrentUser = currentUser?.StudentId;
     }
 }
 <head>
@@ -22,6 +34,11 @@
         <ul>
             @foreach (var student in Model)
             {
+                if (role == "Student" && studentIdForCurrentUser != student.Id)
+                {
+                    continue;
+                }
+                
                 var grades = student.Grades ?? new List<GradeBook.Models.Grade>();
                 var hasGrades = grades.Any();
                 var avg = hasGrades ? grades.Average(g => g.GradeValue) : 0;
@@ -47,26 +64,11 @@
         {
             <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
         }
+        @if (role == "Manager")
+        {
+            <a href="@Url.Action("ManageAccounts", "Managers")">Manage Accounts</a>
+        }
     </main>
-    @if (role == "Manager" && users != null)
-    {
-        <main>
-            <h2>Manager Actions</h2>
-            <ul>
-                <li>
-                    <ul>
-                        Users:
-                        @foreach (var user in users)
-                        {
-                            <li>
-                                @user.Email (@user.Role)
-                            </li>
-                        }
-                    </ul>
-                </li>
-            </ul>
-        </main>
-    }
 </body>
 <script src="@Url.Content("~/js/jumper.js")"></script>
 <script src="@Url.Content("~/js/gradeColor.js")"></script>
