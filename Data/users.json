@@ -19,5 +19,12 @@
     "PasswordHash": "bztaBZoCryD2kkrr4I94jGY16j4a4DXcrpnX7f1Ebd4=",
     "Role": "Manager",
     "StudentId": null
+  },
+  {
+    "Id": 4,
+    "Email": "micha@mail.com",
+    "PasswordHash": "WBLuUKcOY\u002B8A5wuOSySRkpKNRgGHgfMWzCFXiUECKw0=",
+    "Role": "Student",
+    "StudentId": 5
   }
 ]

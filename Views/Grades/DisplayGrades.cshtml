@@ -46,7 +46,15 @@
     {
         <a href="@Url.Action("AddGrade", "Grades", new { studentId = Model.Id })">Add Grade</a>
     }
-    <a href="@Url.Action("Index", "Students")">Back</a>
+
+    @if (role == "Student")
+    {
+        <a href="@Url.Action("StudentMain", "Students")">Back</a>
+    }
+    else
+    {
+        <a href="@Url.Action("DisplayClass", "Students", new { className = Model.Class.ToString() })">Back</a>
+    }
     </main>
 </body>
 <script src="@Url.Content("~/js/jumper.js")"></script>

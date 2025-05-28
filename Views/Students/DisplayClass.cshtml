@@ -4,6 +4,7 @@
 @{
     var role = Context.Session.GetString("Role");
     var userEmail = Context.Session.GetString("Email");
+    string className = ViewBag.ClassName;
     
     List<User> users = null;
     User currentUser = null;
@@ -23,14 +24,14 @@
 }
 <head>
     <meta charset="utf-8" />
-    <title>GradeBook</title>
+    <title>GradeBook - Class @className</title>
     <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
     <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
 </head>
 <body>
     <div id="jumper">ඞ</div>
     <main>
-        <h2>Students List</h2>
+        <h2>Students in Class @className</h2>
         <ul>
             @foreach (var student in Model)
             {
@@ -60,13 +61,10 @@
                 </li>
             }
         </ul>
+        <a href="@Url.Action("TeacherMain", "Students")">Back to classes list</a>
         @if (role == "Teacher")
         {
             <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
-        }
-        @if (role == "Manager")
-        {
-            <a href="@Url.Action("ManageAccounts", "Managers")">Manage Accounts</a>
         }
     </main>
 </body>

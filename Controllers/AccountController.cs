@@ -57,7 +57,17 @@ namespace GradeBook.Controllers
             HttpContext.Session.SetString("Email", user.Email);
             HttpContext.Session.SetString("Role", user.Role);
 
-            return RedirectToAction("Index", "Students");
+            switch (user.Role)
+            {
+                case "Student":
+                    return RedirectToAction("StudentMain", "Students");
+                case "Manager":
+                    return RedirectToAction("ManageAccounts", "Managers");
+                case "Teacher":
+                    return RedirectToAction("TeacherMain", "Students"); 
+                default:
+                    return RedirectToAction("TeacherMain", "Students"); 
+            }
         }
 
         public IActionResult Logout()

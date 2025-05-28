@@ -12,7 +12,7 @@ namespace GradeBook.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Manager")
             {
-                return RedirectToAction("Index", "Students");
+                return RedirectToAction("TeacherMain", "Students"); 
             }
 
             var students = new StudentJsonService().GetStudents();
@@ -27,7 +27,7 @@ namespace GradeBook.Controllers
             var role = HttpContext.Session.GetString("Role");
             if (role != "Manager")
             {
-                return RedirectToAction("Index", "Students");
+                return RedirectToAction("TeacherMain", "Students");
             }
 
             var users = UserJsonService.LoadUsers();

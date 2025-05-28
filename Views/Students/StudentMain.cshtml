@@ -1,0 +1,44 @@
+﻿@model GradeBook.Models.User
+@using GradeBook.Models
+@using GradeBook.Services
+@inject StudentJsonService StudentService
+@{
+    var email = Context.Session.GetString("Email");
+    var user = UserJsonService.LoadUsers().FirstOrDefault(u => u.Email == email);
+    var studentId = user?.StudentId;
+    
+    string studentName = "Student";
+    if (studentId.HasValue)
+    {
+        var student = StudentService.GetStudents().FirstOrDefault(s => s.Id == studentId.Value);
+        if (student != null)
+        {
+            studentName = $"{student.FirstName} {student.LastName}";
+        }
+    }
+}
+<head>
+    <meta charset="utf-8" />
+    <title>GradeBook - @studentName's Dashboard</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
+    <main>
+        <h2>@studentName's Dashboard</h2>
+        @if (studentId.HasValue)
+        {
+            <div class="student-options">
+                <a href="@Url.Action("DisplayGrades", "Grades", new { studentId = studentId.Value })" class="grade-link">
+                    View My Grades
+                </a>
+            </div>
+        }
+        else
+        {
+            <p>Your account is not linked to a student record. Please contact your administrator.</p>
+        }
+    </main>
+</body>
+<script src="@Url.Content("~/js/jumper.js")"></script>

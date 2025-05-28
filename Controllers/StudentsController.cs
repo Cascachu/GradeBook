@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using GradeBook.Models;
 using GradeBook.Services;
+using System.Linq;
 
 namespace GradeBook.Controllers
 {
@@ -15,8 +16,32 @@ namespace GradeBook.Controllers
 
         public IActionResult Index()
         {
+            var role = HttpContext.Session.GetString("Role");
+            if (role == "Student")
+            {
+                return RedirectToAction("StudentMain");
+            }
+            
+            return RedirectToAction("TeacherMain");
+        }
+
+        public IActionResult StudentMain()
+        {
+            return View();
+        }
+
+        public IActionResult TeacherMain()
+        {
             var students = _jsonDataService.GetStudents();
-            return View("~/Views/Index.cshtml", students);
+            var classes = students.Select(s => s.Class.ToString()).Distinct().OrderBy(c => c).ToList();
+            return View("~/Views/TeacherMain.cshtml", classes);
+        }
+
+        public IActionResult DisplayClass(string className)
+        {
+            var students = _jsonDataService.GetStudents().Where(s => s.Class.ToString() == className).ToList();
+            ViewBag.ClassName = className;
+            return View(students);
         }
 
         public IActionResult AddStudent()
@@ -31,7 +56,7 @@ namespace GradeBook.Controllers
             student.Id = students.Any() ? students.Max(s => s.Id) + 1 : 1;
             students.Add(student);
             _jsonDataService.SaveStudents(students);
-            return RedirectToAction("Index");
+            return RedirectToAction("TeacherMain"); 
         }
     }
 }
