@@ -14,13 +14,13 @@ namespace GradeBook.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(string Email, string Password, string Role)
+        public IActionResult Register(string Email, string Password)
         {
             var users = UserJsonService.LoadUsers();
             if (users.Any(u => u.Email == Email))
             {
                 ViewBag.Error = "Email already exists.";
-                return View(new User { Email = Email, Role = Role });
+                return View(new User { Email = Email });
             }
 
             var user = new User
@@ -28,7 +28,7 @@ namespace GradeBook.Controllers
                 Id = users.Count > 0 ? users.Max(u => u.Id) + 1 : 1,
                 Email = Email,
                 PasswordHash = PasswordHelper.HashPassword(Password),
-                Role = Role
+                Role = "Guest"  
             };
             users.Add(user);
             UserJsonService.SaveUsers(users);
@@ -65,6 +65,8 @@ namespace GradeBook.Controllers
                     return RedirectToAction("ManageAccounts", "Managers");
                 case "Teacher":
                     return RedirectToAction("TeacherMain", "Students"); 
+                case "Guest":
+                    return RedirectToAction("GuestWaiting", "Account");
                 default:
                     return RedirectToAction("TeacherMain", "Students"); 
             }
@@ -87,6 +89,11 @@ namespace GradeBook.Controllers
                 UserJsonService.SaveUsers(users);
             }
             return RedirectToAction("Index", "Students");
+        }
+
+        public IActionResult GuestWaiting()
+        {
+            return View();
         }
     }
 }

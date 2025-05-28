@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Account Verification";
+}
+<head>
+    <meta charset="utf-8" />
+    <title>GradeBook - Account Verification</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
+    <main>
+        <h2>Account Verification</h2>
+        <div class="message-box">
+            <p>Please wait until a manager verifies your credentials and assigns you a role.</p>
+            <p>You will be able to access the system once your account has been verified.</p>
+        </div>
+        <p>You can <a href="@Url.Action("Logout", "Account")">log out</a> and check back later.</p>
+    </main>
+</body>
+<script src="@Url.Content("~/js/jumper.js")"></script>

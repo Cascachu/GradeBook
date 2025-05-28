@@ -9,6 +9,8 @@
     
     var students = Model.Item1;
     var users = Model.Item2;
+    var guests = users.Where(u => u.Role == "Guest").ToList();
+    var nonGuests = users.Where(u => u.Role != "Guest").ToList();
 }
 <head>
     <meta charset="utf-8" />
@@ -20,9 +22,49 @@
     <div id="jumper">ඞ</div>
     <main>
         <h2>Manage User Accounts</h2>
-        <h3>Users Management</h3>
+        
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="success-message">@TempData["SuccessMessage"]</div>
+        }
+        
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="error-message">@TempData["ErrorMessage"]</div>
+        }
+        
+        <h3>Pending Guest Accounts</h3>
+        @if (guests.Any())
+        {
+            <ul>
+                @foreach (var guest in guests)
+                {
+                    <li>
+                        @guest.Email (Guest)
+                        <form method="post" action="@Url.Action("AssignRole", "Managers")">
+                            <input type="hidden" name="userId" value="@guest.Id" />
+                            <select name="role">
+                                <option value="Student">Student</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Manager">Manager</option>
+                            </select>
+                            <button type="submit">Assign Role</button>
+                        </form>
+                        <a href="@Url.Action("RemoveAccount", "Managers", new { userId = guest.Id })" 
+                           onclick="return confirm('Are you sure you want to delete this guest account?');"
+                           style="margin-left: 10px; color: #ff4444;">Delete</a>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No pending guest accounts.</p>
+        }
+        
+        <h3>Active Users Management</h3>
         <ul>
-            @foreach (var user in users)
+            @foreach (var user in nonGuests)
             {
                 <li>
                     @user.Email (@user.Role)
@@ -41,18 +83,27 @@
                             </select>
                             <button type="submit">Assign</button>
                         </form>
-                        @if (user.StudentId != null)
+                    }
+                    
+                    @if (user.Role != "Manager")
+                    {
+                        <a href="@Url.Action("RemoveAccount", "Managers", new { userId = user.Id })" 
+                           onclick="return confirm('Are you sure you want to delete this account?');"
+                           style="margin-left: 10px; color: #ff4444;">Delete</a>
+                    }
+                    
+                    @if (user.Role == "Student" && user.StudentId != null)
+                    {
+                        <br/>
+                        var assignedStudent = students.FirstOrDefault(s => s.Id == user.StudentId);
+                        if (assignedStudent != null)
                         {
-                            var assignedStudent = students.FirstOrDefault(s => s.Id == user.StudentId);
-                            if (assignedStudent != null)
-                            {
-                                <span>Currently assigned: @assignedStudent.FirstName @assignedStudent.LastName</span>
-                            }
+                            <span>Currently assigned: @assignedStudent.FirstName @assignedStudent.LastName</span>
                         }
                     }
                 </li>
             }
         </ul>
-        </main>
+    </main>
     <script src="@Url.Content("~/js/jumper.js")"></script>
 </body>

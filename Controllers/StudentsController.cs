@@ -14,16 +14,7 @@ namespace GradeBook.Controllers
             _jsonDataService = jsonDataService;
         }
 
-        public IActionResult Index()
-        {
-            var role = HttpContext.Session.GetString("Role");
-            if (role == "Student")
-            {
-                return RedirectToAction("StudentMain");
-            }
-            
-            return RedirectToAction("TeacherMain");
-        }
+        
 
         public IActionResult StudentMain()
         {

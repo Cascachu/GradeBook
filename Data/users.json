@@ -26,5 +26,19 @@
     "PasswordHash": "WBLuUKcOY\u002B8A5wuOSySRkpKNRgGHgfMWzCFXiUECKw0=",
     "Role": "Student",
     "StudentId": 5
+  },
+  {
+    "Id": 5,
+    "Email": "Admin@mail.com",
+    "PasswordHash": "jGl25bVBBBW96Qi9Te4V37Fnqchz/Eu4qB9vKrRIqRg=",
+    "Role": "Manager",
+    "StudentId": null
+  },
+  {
+    "Id": 6,
+    "Email": "John@mail.com",
+    "PasswordHash": "ltljLzY1ZMwwMlIUCc8iqFLyAy7sCZ7VlnwNAAzsYHo=",
+    "Role": "Guest",
+    "StudentId": null
   }
 ]

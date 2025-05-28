@@ -1,202 +1,2818 @@
 [
   {
     "Id": 1,
-    "FirstName": "John",
-    "LastName": "Doe",
-    "Class": "A1",
+    "FirstName": "Charles",
+    "LastName": "Gonzalez",
+    "Class": "E5",
     "Grades": [
       {
         "Id": 1,
-        "GradeValue": 5,
-        "Subject": "Mathematics",
-        "Date": "2023-05-10T00:00:00",
-        "Description": "Algebra midterm test",
+        "GradeValue": 2,
+        "Subject": "Geography",
+        "Date": "2025-05-14T00:00:00",
+        "Description": "Final test",
         "StudentId": 1
       },
       {
         "Id": 2,
-        "GradeValue": 4,
-        "Subject": "Physics",
-        "Date": "2023-06-15T00:00:00",
-        "Description": "Mechanics quiz",
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2025-04-14T00:00:00",
+        "Description": "Midterm exam",
         "StudentId": 1
       },
       {
         "Id": 3,
-        "GradeValue": 3,
-        "Subject": "Chemistry",
-        "Date": "2023-07-01T00:00:00",
-        "Description": "Organic chemistry lab report",
+        "GradeValue": 5,
+        "Subject": "Geography",
+        "Date": "2025-01-21T00:00:00",
+        "Description": "Midterm exam",
         "StudentId": 1
       }
     ]
   },
   {
     "Id": 2,
-    "FirstName": "Jane",
-    "LastName": "Smith",
-    "Class": "A1",
+    "FirstName": "Thomas",
+    "LastName": "Martinez",
+    "Class": "B2",
     "Grades": [
       {
-        "Id": 1,
-        "GradeValue": 4,
-        "Subject": "Science",
-        "Date": "2023-04-20T00:00:00",
-        "Description": "Biology chapter test",
+        "Id": 4,
+        "GradeValue": 6,
+        "Subject": "Geography",
+        "Date": "2024-12-30T00:00:00",
+        "Description": "Lab report",
         "StudentId": 2
       },
       {
-        "Id": 2,
+        "Id": 5,
         "GradeValue": 5,
         "Subject": "Mathematics",
-        "Date": "2023-05-18T00:00:00",
-        "Description": "Geometry project",
+        "Date": "2025-06-23T00:00:00",
+        "Description": "Lab report",
         "StudentId": 2
       },
       {
-        "Id": 3,
+        "Id": 6,
+        "GradeValue": 1,
+        "Subject": "Chemistry",
+        "Date": "2025-03-23T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 2
+      },
+      {
+        "Id": 7,
         "GradeValue": 3,
         "Subject": "English",
-        "Date": "2023-06-10T00:00:00",
-        "Description": "Essay on Shakespeare",
+        "Date": "2025-03-24T00:00:00",
+        "Description": "Quiz",
         "StudentId": 2
       }
     ]
   },
   {
     "Id": 3,
-    "FirstName": "Kacper",
-    "LastName": "Wolski",
-    "Class": "A1",
+    "FirstName": "Michael",
+    "LastName": "Wilson",
+    "Class": "H1",
     "Grades": [
       {
-        "Id": 1,
-        "GradeValue": 5,
+        "Id": 8,
+        "GradeValue": 2,
         "Subject": "History",
-        "Date": "2025-05-01T00:00:00",
-        "Description": "WW1",
+        "Date": "2025-03-21T00:00:00",
+        "Description": "Final test",
         "StudentId": 3
       },
       {
-        "Id": 2,
-        "GradeValue": 6,
-        "Subject": "History",
-        "Date": "2025-05-24T00:00:00",
-        "Description": "WW2",
-        "StudentId": 3
-      },
-      {
-        "Id": 3,
-        "GradeValue": 3,
-        "Subject": "Math",
-        "Date": "2025-03-13T00:00:00",
-        "Description": "Geometry",
-        "StudentId": 3
-      },
-      {
-        "Id": 5,
-        "GradeValue": 5,
-        "Subject": "Chemistry",
-        "Date": "2025-05-22T00:00:00",
-        "Description": "Metals",
-        "StudentId": 3
-      },
-      {
-        "Id": 6,
-        "GradeValue": 6,
-        "Subject": "Game Theory",
-        "Date": "2077-12-09T00:00:00",
-        "Description": "CyberPunk",
+        "Id": 9,
+        "GradeValue": 4,
+        "Subject": "Computer Science",
+        "Date": "2024-07-09T00:00:00",
+        "Description": "Project presentation",
         "StudentId": 3
       }
     ]
   },
   {
     "Id": 4,
-    "FirstName": "Dawid",
-    "LastName": "Borowik",
+    "FirstName": "Robert",
+    "LastName": "Smith",
     "Class": "E2",
     "Grades": [
       {
-        "Id": 1,
+        "Id": 10,
+        "GradeValue": 6,
+        "Subject": "Physics",
+        "Date": "2024-11-04T00:00:00",
+        "Description": "Final test",
+        "StudentId": 4
+      },
+      {
+        "Id": 11,
         "GradeValue": 2,
-        "Subject": "Mathematics",
-        "Date": "2024-09-15T00:00:00",
-        "Description": "Algebra quiz",
+        "Subject": "History",
+        "Date": "2024-11-30T00:00:00",
+        "Description": "Homework assignment",
         "StudentId": 4
       },
       {
-        "Id": 2,
-        "GradeValue": 3,
-        "Subject": "English",
-        "Date": "2024-10-01T00:00:00",
-        "Description": "Vocabulary test",
-        "StudentId": 4
-      },
-      {
-        "Id": 3,
-        "GradeValue": 4,
+        "Id": 12,
+        "GradeValue": 2,
         "Subject": "Biology",
-        "Date": "2024-11-12T00:00:00",
-        "Description": "Cell structure project",
+        "Date": "2025-01-07T00:00:00",
+        "Description": "Final test",
+        "StudentId": 4
+      },
+      {
+        "Id": 13,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2025-04-23T00:00:00",
+        "Description": "Project presentation",
         "StudentId": 4
       }
     ]
   },
   {
     "Id": 5,
-    "FirstName": "Micha\u0142",
-    "LastName": "Mamot",
-    "Class": "D5",
+    "FirstName": "John",
+    "LastName": "Gonzalez",
+    "Class": "D3",
     "Grades": [
       {
-        "Id": 1,
-        "GradeValue": 2,
-        "Subject": "Physics",
-        "Date": "2025-05-07T00:00:00",
-        "Description": "Quantum entanglement test",
-        "StudentId": 5
-      },
-      {
-        "Id": 2,
-        "GradeValue": 5,
-        "Subject": "Mathematics",
-        "Date": "2025-05-15T00:00:00",
-        "Description": "Algebra final exam",
-        "StudentId": 5
-      },
-      {
-        "Id": 3,
-        "GradeValue": 4,
-        "Subject": "Chemistry",
-        "Date": "2025-05-20T00:00:00",
-        "Description": "Organic chemistry lab report",
-        "StudentId": 5
-      },
-      {
-        "Id": 4,
-        "GradeValue": 1,
-        "Subject": "History",
-        "Date": "2025-05-15T00:00:00",
-        "Description": "WW1",
-        "StudentId": 5
-      },
-      {
-        "Id": 5,
-        "GradeValue": 3,
-        "Subject": "English",
-        "Date": "2025-05-14T00:00:00",
-        "Description": "Vocabulary test",
-        "StudentId": 5
-      },
-      {
-        "Id": 6,
+        "Id": 14,
         "GradeValue": 6,
-        "Subject": "PE",
-        "Date": "2025-05-16T00:00:00",
-        "Description": "Running",
+        "Subject": "Biology",
+        "Date": "2024-07-13T00:00:00",
+        "Description": "Homework assignment",
         "StudentId": 5
       }
     ]
+  },
+  {
+    "Id": 6,
+    "FirstName": "Jessica",
+    "LastName": "Johnson",
+    "Class": "A2",
+    "Grades": [
+      {
+        "Id": 15,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2025-04-04T00:00:00",
+        "Description": "Final test",
+        "StudentId": 6
+      },
+      {
+        "Id": 16,
+        "GradeValue": 4,
+        "Subject": "Chemistry",
+        "Date": "2024-09-17T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 6
+      },
+      {
+        "Id": 17,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2025-06-27T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 6
+      },
+      {
+        "Id": 18,
+        "GradeValue": 6,
+        "Subject": "Chemistry",
+        "Date": "2024-12-15T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 6
+      }
+    ]
+  },
+  {
+    "Id": 7,
+    "FirstName": "Charles",
+    "LastName": "Hernandez",
+    "Class": "B3",
+    "Grades": [
+      {
+        "Id": 19,
+        "GradeValue": 4,
+        "Subject": "Mathematics",
+        "Date": "2024-07-20T00:00:00",
+        "Description": "Final test",
+        "StudentId": 7
+      },
+      {
+        "Id": 20,
+        "GradeValue": 6,
+        "Subject": "Computer Science",
+        "Date": "2024-08-11T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 7
+      }
+    ]
+  },
+  {
+    "Id": 8,
+    "FirstName": "Jessica",
+    "LastName": "Moore",
+    "Class": "A4",
+    "Grades": [
+      {
+        "Id": 21,
+        "GradeValue": 2,
+        "Subject": "English",
+        "Date": "2024-11-14T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 8
+      },
+      {
+        "Id": 22,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2025-01-05T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 8
+      },
+      {
+        "Id": 23,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2025-06-23T00:00:00",
+        "Description": "Final test",
+        "StudentId": 8
+      },
+      {
+        "Id": 24,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2024-11-07T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 8
+      }
+    ]
+  },
+  {
+    "Id": 9,
+    "FirstName": "Linda",
+    "LastName": "Garcia",
+    "Class": "E4",
+    "Grades": [
+      {
+        "Id": 25,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2025-02-24T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 9
+      },
+      {
+        "Id": 26,
+        "GradeValue": 3,
+        "Subject": "English",
+        "Date": "2024-11-22T00:00:00",
+        "Description": "Final test",
+        "StudentId": 9
+      },
+      {
+        "Id": 27,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2024-12-21T00:00:00",
+        "Description": "Final test",
+        "StudentId": 9
+      }
+    ]
+  },
+  {
+    "Id": 10,
+    "FirstName": "Sarah",
+    "LastName": "Garcia",
+    "Class": "E5",
+    "Grades": [
+      {
+        "Id": 28,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2025-05-14T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 10
+      },
+      {
+        "Id": 29,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2024-10-22T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 10
+      },
+      {
+        "Id": 30,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2025-05-17T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 10
+      },
+      {
+        "Id": 31,
+        "GradeValue": 2,
+        "Subject": "Geography",
+        "Date": "2025-02-17T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 10
+      }
+    ]
+  },
+  {
+    "Id": 11,
+    "FirstName": "Patricia",
+    "LastName": "Gonzalez",
+    "Class": "H4",
+    "Grades": [
+      {
+        "Id": 32,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2024-10-24T00:00:00",
+        "Description": "Final test",
+        "StudentId": 11
+      },
+      {
+        "Id": 33,
+        "GradeValue": 5,
+        "Subject": "English",
+        "Date": "2024-11-13T00:00:00",
+        "Description": "Final test",
+        "StudentId": 11
+      },
+      {
+        "Id": 34,
+        "GradeValue": 4,
+        "Subject": "Mathematics",
+        "Date": "2024-07-16T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 11
+      }
+    ]
+  },
+  {
+    "Id": 12,
+    "FirstName": "Thomas",
+    "LastName": "Williams",
+    "Class": "B5",
+    "Grades": [
+      {
+        "Id": 35,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2024-10-19T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 12
+      },
+      {
+        "Id": 36,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2025-04-16T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 12
+      },
+      {
+        "Id": 37,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2024-11-13T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 12
+      }
+    ]
+  },
+  {
+    "Id": 13,
+    "FirstName": "Linda",
+    "LastName": "Brown",
+    "Class": "G3",
+    "Grades": [
+      {
+        "Id": 38,
+        "GradeValue": 6,
+        "Subject": "Geography",
+        "Date": "2024-10-13T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 13
+      },
+      {
+        "Id": 39,
+        "GradeValue": 4,
+        "Subject": "Geography",
+        "Date": "2024-10-29T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 13
+      },
+      {
+        "Id": 40,
+        "GradeValue": 2,
+        "Subject": "Biology",
+        "Date": "2025-01-06T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 13
+      },
+      {
+        "Id": 41,
+        "GradeValue": 4,
+        "Subject": "Physics",
+        "Date": "2025-06-08T00:00:00",
+        "Description": "Final test",
+        "StudentId": 13
+      }
+    ]
+  },
+  {
+    "Id": 14,
+    "FirstName": "Karen",
+    "LastName": "Davis",
+    "Class": "H3",
+    "Grades": [
+      {
+        "Id": 42,
+        "GradeValue": 3,
+        "Subject": "Mathematics",
+        "Date": "2025-03-25T00:00:00",
+        "Description": "Final test",
+        "StudentId": 14
+      },
+      {
+        "Id": 43,
+        "GradeValue": 4,
+        "Subject": "History",
+        "Date": "2024-07-16T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 14
+      },
+      {
+        "Id": 44,
+        "GradeValue": 2,
+        "Subject": "Chemistry",
+        "Date": "2025-06-16T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 14
+      }
+    ]
+  },
+  {
+    "Id": 15,
+    "FirstName": "Linda",
+    "LastName": "Anderson",
+    "Class": "C3",
+    "Grades": [
+      {
+        "Id": 45,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2025-02-17T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 15
+      },
+      {
+        "Id": 46,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2025-06-23T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 15
+      }
+    ]
+  },
+  {
+    "Id": 16,
+    "FirstName": "Joseph",
+    "LastName": "Miller",
+    "Class": "D1",
+    "Grades": [
+      {
+        "Id": 47,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2025-03-14T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 16
+      },
+      {
+        "Id": 48,
+        "GradeValue": 6,
+        "Subject": "History",
+        "Date": "2025-04-03T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 16
+      },
+      {
+        "Id": 49,
+        "GradeValue": 3,
+        "Subject": "Biology",
+        "Date": "2024-12-26T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 16
+      },
+      {
+        "Id": 50,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2024-11-22T00:00:00",
+        "Description": "Final test",
+        "StudentId": 16
+      }
+    ]
+  },
+  {
+    "Id": 17,
+    "FirstName": "Thomas",
+    "LastName": "Thomas",
+    "Class": "F5",
+    "Grades": [
+      {
+        "Id": 51,
+        "GradeValue": 6,
+        "Subject": "Chemistry",
+        "Date": "2025-04-23T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 17
+      },
+      {
+        "Id": 52,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2024-07-19T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 17
+      }
+    ]
+  },
+  {
+    "Id": 18,
+    "FirstName": "John",
+    "LastName": "Jones",
+    "Class": "E2",
+    "Grades": [
+      {
+        "Id": 53,
+        "GradeValue": 4,
+        "Subject": "Computer Science",
+        "Date": "2025-01-21T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 18
+      },
+      {
+        "Id": 54,
+        "GradeValue": 5,
+        "Subject": "History",
+        "Date": "2024-08-17T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 18
+      },
+      {
+        "Id": 55,
+        "GradeValue": 4,
+        "Subject": "Computer Science",
+        "Date": "2025-05-05T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 18
+      },
+      {
+        "Id": 56,
+        "GradeValue": 3,
+        "Subject": "History",
+        "Date": "2024-09-16T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 18
+      }
+    ]
+  },
+  {
+    "Id": 19,
+    "FirstName": "Linda",
+    "LastName": "Williams",
+    "Class": "A1",
+    "Grades": [
+      {
+        "Id": 57,
+        "GradeValue": 6,
+        "Subject": "Biology",
+        "Date": "2025-03-13T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 19
+      }
+    ]
+  },
+  {
+    "Id": 20,
+    "FirstName": "Joseph",
+    "LastName": "Davis",
+    "Class": "B4",
+    "Grades": [
+      {
+        "Id": 58,
+        "GradeValue": 2,
+        "Subject": "Biology",
+        "Date": "2025-04-02T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 20
+      },
+      {
+        "Id": 59,
+        "GradeValue": 4,
+        "Subject": "Geography",
+        "Date": "2024-11-14T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 20
+      },
+      {
+        "Id": 60,
+        "GradeValue": 1,
+        "Subject": "Mathematics",
+        "Date": "2025-03-23T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 20
+      }
+    ]
+  },
+  {
+    "Id": 21,
+    "FirstName": "Linda",
+    "LastName": "Martin",
+    "Class": "F4",
+    "Grades": [
+      {
+        "Id": 61,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2024-08-12T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 21
+      },
+      {
+        "Id": 62,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2024-08-31T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 21
+      }
+    ]
+  },
+  {
+    "Id": 22,
+    "FirstName": "Jessica",
+    "LastName": "Gonzalez",
+    "Class": "H2",
+    "Grades": [
+      {
+        "Id": 63,
+        "GradeValue": 4,
+        "Subject": "Mathematics",
+        "Date": "2024-07-17T00:00:00",
+        "Description": "Final test",
+        "StudentId": 22
+      }
+    ]
+  },
+  {
+    "Id": 23,
+    "FirstName": "Susan",
+    "LastName": "Johnson",
+    "Class": "F4",
+    "Grades": [
+      {
+        "Id": 64,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2025-04-11T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 23
+      },
+      {
+        "Id": 65,
+        "GradeValue": 6,
+        "Subject": "Computer Science",
+        "Date": "2024-07-17T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 23
+      }
+    ]
+  },
+  {
+    "Id": 24,
+    "FirstName": "Karen",
+    "LastName": "Davis",
+    "Class": "F2",
+    "Grades": [
+      {
+        "Id": 66,
+        "GradeValue": 5,
+        "Subject": "History",
+        "Date": "2024-07-27T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 24
+      }
+    ]
+  },
+  {
+    "Id": 25,
+    "FirstName": "Robert",
+    "LastName": "Smith",
+    "Class": "C4",
+    "Grades": [
+      {
+        "Id": 67,
+        "GradeValue": 4,
+        "Subject": "Computer Science",
+        "Date": "2024-12-14T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 25
+      },
+      {
+        "Id": 68,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2024-11-13T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 25
+      },
+      {
+        "Id": 69,
+        "GradeValue": 5,
+        "Subject": "English",
+        "Date": "2024-11-05T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 25
+      },
+      {
+        "Id": 70,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2025-03-19T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 25
+      }
+    ]
+  },
+  {
+    "Id": 26,
+    "FirstName": "Elizabeth",
+    "LastName": "Brown",
+    "Class": "C1",
+    "Grades": [
+      {
+        "Id": 71,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2025-03-05T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 26
+      },
+      {
+        "Id": 72,
+        "GradeValue": 3,
+        "Subject": "Mathematics",
+        "Date": "2024-11-03T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 26
+      },
+      {
+        "Id": 73,
+        "GradeValue": 2,
+        "Subject": "English",
+        "Date": "2025-03-29T00:00:00",
+        "Description": "Final test",
+        "StudentId": 26
+      },
+      {
+        "Id": 74,
+        "GradeValue": 2,
+        "Subject": "History",
+        "Date": "2024-07-16T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 26
+      }
+    ]
+  },
+  {
+    "Id": 27,
+    "FirstName": "Joseph",
+    "LastName": "Lopez",
+    "Class": "G3",
+    "Grades": [
+      {
+        "Id": 75,
+        "GradeValue": 4,
+        "Subject": "Mathematics",
+        "Date": "2024-07-10T00:00:00",
+        "Description": "Final test",
+        "StudentId": 27
+      },
+      {
+        "Id": 76,
+        "GradeValue": 1,
+        "Subject": "Computer Science",
+        "Date": "2024-09-15T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 27
+      }
+    ]
+  },
+  {
+    "Id": 28,
+    "FirstName": "Susan",
+    "LastName": "Miller",
+    "Class": "H1",
+    "Grades": [
+      {
+        "Id": 77,
+        "GradeValue": 2,
+        "Subject": "English",
+        "Date": "2025-02-07T00:00:00",
+        "Description": "Final test",
+        "StudentId": 28
+      },
+      {
+        "Id": 78,
+        "GradeValue": 4,
+        "Subject": "Chemistry",
+        "Date": "2024-09-25T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 28
+      }
+    ]
+  },
+  {
+    "Id": 29,
+    "FirstName": "James",
+    "LastName": "Martinez",
+    "Class": "A5",
+    "Grades": [
+      {
+        "Id": 79,
+        "GradeValue": 5,
+        "Subject": "Biology",
+        "Date": "2024-11-17T00:00:00",
+        "Description": "Final test",
+        "StudentId": 29
+      },
+      {
+        "Id": 80,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2025-06-16T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 29
+      },
+      {
+        "Id": 81,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2024-07-22T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 29
+      }
+    ]
+  },
+  {
+    "Id": 30,
+    "FirstName": "Linda",
+    "LastName": "Martinez",
+    "Class": "F1",
+    "Grades": [
+      {
+        "Id": 82,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2024-09-16T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 30
+      },
+      {
+        "Id": 83,
+        "GradeValue": 2,
+        "Subject": "History",
+        "Date": "2025-06-28T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 30
+      },
+      {
+        "Id": 84,
+        "GradeValue": 6,
+        "Subject": "Biology",
+        "Date": "2024-12-31T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 30
+      },
+      {
+        "Id": 85,
+        "GradeValue": 5,
+        "Subject": "English",
+        "Date": "2025-06-14T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 30
+      }
+    ]
+  },
+  {
+    "Id": 31,
+    "FirstName": "Sarah",
+    "LastName": "Williams",
+    "Class": "A2",
+    "Grades": [
+      {
+        "Id": 86,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2024-10-22T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 31
+      },
+      {
+        "Id": 87,
+        "GradeValue": 1,
+        "Subject": "Computer Science",
+        "Date": "2024-07-12T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 31
+      }
+    ]
+  },
+  {
+    "Id": 32,
+    "FirstName": "Jennifer",
+    "LastName": "Lopez",
+    "Class": "B4",
+    "Grades": [
+      {
+        "Id": 88,
+        "GradeValue": 5,
+        "Subject": "Geography",
+        "Date": "2024-07-16T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 32
+      }
+    ]
+  },
+  {
+    "Id": 33,
+    "FirstName": "Elizabeth",
+    "LastName": "Moore",
+    "Class": "H3",
+    "Grades": [
+      {
+        "Id": 89,
+        "GradeValue": 2,
+        "Subject": "Physics",
+        "Date": "2025-02-01T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 33
+      },
+      {
+        "Id": 90,
+        "GradeValue": 4,
+        "Subject": "Biology",
+        "Date": "2024-12-01T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 33
+      },
+      {
+        "Id": 91,
+        "GradeValue": 1,
+        "Subject": "English",
+        "Date": "2024-12-23T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 33
+      }
+    ]
+  },
+  {
+    "Id": 34,
+    "FirstName": "Karen",
+    "LastName": "Martinez",
+    "Class": "B1",
+    "Grades": [
+      {
+        "Id": 92,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2024-12-07T00:00:00",
+        "Description": "Final test",
+        "StudentId": 34
+      },
+      {
+        "Id": 93,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2025-04-28T00:00:00",
+        "Description": "Final test",
+        "StudentId": 34
+      },
+      {
+        "Id": 94,
+        "GradeValue": 2,
+        "Subject": "Geography",
+        "Date": "2024-10-13T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 34
+      }
+    ]
+  },
+  {
+    "Id": 35,
+    "FirstName": "Michael",
+    "LastName": "Moore",
+    "Class": "G2",
+    "Grades": [
+      {
+        "Id": 95,
+        "GradeValue": 1,
+        "Subject": "English",
+        "Date": "2024-11-05T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 35
+      },
+      {
+        "Id": 96,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2025-01-19T00:00:00",
+        "Description": "Final test",
+        "StudentId": 35
+      }
+    ]
+  },
+  {
+    "Id": 36,
+    "FirstName": "James",
+    "LastName": "Garcia",
+    "Class": "C2",
+    "Grades": [
+      {
+        "Id": 97,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2025-01-21T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 36
+      }
+    ]
+  },
+  {
+    "Id": 37,
+    "FirstName": "David",
+    "LastName": "Smith",
+    "Class": "A1",
+    "Grades": [
+      {
+        "Id": 98,
+        "GradeValue": 4,
+        "Subject": "Biology",
+        "Date": "2025-05-06T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 37
+      },
+      {
+        "Id": 99,
+        "GradeValue": 6,
+        "Subject": "English",
+        "Date": "2025-04-06T00:00:00",
+        "Description": "Final test",
+        "StudentId": 37
+      },
+      {
+        "Id": 100,
+        "GradeValue": 1,
+        "Subject": "Chemistry",
+        "Date": "2024-11-29T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 37
+      },
+      {
+        "Id": 101,
+        "GradeValue": 2,
+        "Subject": "Physics",
+        "Date": "2024-11-05T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 37
+      }
+    ]
+  },
+  {
+    "Id": 38,
+    "FirstName": "Patricia",
+    "LastName": "Williams",
+    "Class": "A5",
+    "Grades": [
+      {
+        "Id": 102,
+        "GradeValue": 2,
+        "Subject": "Chemistry",
+        "Date": "2025-05-19T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 38
+      },
+      {
+        "Id": 103,
+        "GradeValue": 2,
+        "Subject": "Chemistry",
+        "Date": "2025-05-02T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 38
+      },
+      {
+        "Id": 104,
+        "GradeValue": 3,
+        "Subject": "Biology",
+        "Date": "2025-04-22T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 38
+      }
+    ]
+  },
+  {
+    "Id": 39,
+    "FirstName": "Susan",
+    "LastName": "Jackson",
+    "Class": "H3",
+    "Grades": [
+      {
+        "Id": 105,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2025-03-11T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 39
+      },
+      {
+        "Id": 106,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2025-05-21T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 39
+      }
+    ]
+  },
+  {
+    "Id": 40,
+    "FirstName": "James",
+    "LastName": "Jackson",
+    "Class": "D2",
+    "Grades": [
+      {
+        "Id": 107,
+        "GradeValue": 3,
+        "Subject": "Physics",
+        "Date": "2024-10-03T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 40
+      },
+      {
+        "Id": 108,
+        "GradeValue": 2,
+        "Subject": "Computer Science",
+        "Date": "2025-03-31T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 40
+      },
+      {
+        "Id": 109,
+        "GradeValue": 6,
+        "Subject": "Physics",
+        "Date": "2025-06-22T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 40
+      }
+    ]
+  },
+  {
+    "Id": 41,
+    "FirstName": "Mary",
+    "LastName": "Garcia",
+    "Class": "E3",
+    "Grades": [
+      {
+        "Id": 110,
+        "GradeValue": 1,
+        "Subject": "Computer Science",
+        "Date": "2024-08-01T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 41
+      }
+    ]
+  },
+  {
+    "Id": 42,
+    "FirstName": "Robert",
+    "LastName": "Jones",
+    "Class": "H5",
+    "Grades": [
+      {
+        "Id": 111,
+        "GradeValue": 4,
+        "Subject": "History",
+        "Date": "2024-11-24T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 42
+      },
+      {
+        "Id": 112,
+        "GradeValue": 5,
+        "Subject": "Biology",
+        "Date": "2025-04-29T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 42
+      },
+      {
+        "Id": 113,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2024-12-28T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 42
+      },
+      {
+        "Id": 114,
+        "GradeValue": 1,
+        "Subject": "Chemistry",
+        "Date": "2025-04-30T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 42
+      }
+    ]
+  },
+  {
+    "Id": 43,
+    "FirstName": "Sarah",
+    "LastName": "Anderson",
+    "Class": "H2",
+    "Grades": [
+      {
+        "Id": 115,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2025-01-26T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 43
+      }
+    ]
+  },
+  {
+    "Id": 44,
+    "FirstName": "Barbara",
+    "LastName": "Miller",
+    "Class": "D2",
+    "Grades": [
+      {
+        "Id": 116,
+        "GradeValue": 6,
+        "Subject": "Physics",
+        "Date": "2024-08-01T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 44
+      }
+    ]
+  },
+  {
+    "Id": 45,
+    "FirstName": "Jennifer",
+    "LastName": "Davis",
+    "Class": "D5",
+    "Grades": [
+      {
+        "Id": 117,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2024-10-07T00:00:00",
+        "Description": "Final test",
+        "StudentId": 45
+      },
+      {
+        "Id": 118,
+        "GradeValue": 2,
+        "Subject": "English",
+        "Date": "2025-03-25T00:00:00",
+        "Description": "Final test",
+        "StudentId": 45
+      },
+      {
+        "Id": 119,
+        "GradeValue": 6,
+        "Subject": "Biology",
+        "Date": "2024-11-21T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 45
+      }
+    ]
+  },
+  {
+    "Id": 46,
+    "FirstName": "Charles",
+    "LastName": "Martinez",
+    "Class": "E1",
+    "Grades": [
+      {
+        "Id": 120,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2024-08-26T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 46
+      },
+      {
+        "Id": 121,
+        "GradeValue": 6,
+        "Subject": "Computer Science",
+        "Date": "2025-03-05T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 46
+      },
+      {
+        "Id": 122,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2025-03-16T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 46
+      }
+    ]
+  },
+  {
+    "Id": 47,
+    "FirstName": "Mary",
+    "LastName": "Jackson",
+    "Class": "A2",
+    "Grades": [
+      {
+        "Id": 123,
+        "GradeValue": 5,
+        "Subject": "Chemistry",
+        "Date": "2024-07-18T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 47
+      },
+      {
+        "Id": 124,
+        "GradeValue": 1,
+        "Subject": "Computer Science",
+        "Date": "2025-02-07T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 47
+      }
+    ]
+  },
+  {
+    "Id": 48,
+    "FirstName": "Patricia",
+    "LastName": "Smith",
+    "Class": "D5",
+    "Grades": [
+      {
+        "Id": 125,
+        "GradeValue": 5,
+        "Subject": "Biology",
+        "Date": "2025-02-27T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 48
+      },
+      {
+        "Id": 126,
+        "GradeValue": 5,
+        "Subject": "History",
+        "Date": "2025-06-20T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 48
+      },
+      {
+        "Id": 127,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2025-04-15T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 48
+      }
+    ]
+  },
+  {
+    "Id": 49,
+    "FirstName": "Thomas",
+    "LastName": "Hernandez",
+    "Class": "C2",
+    "Grades": [
+      {
+        "Id": 128,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2025-05-30T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 49
+      },
+      {
+        "Id": 129,
+        "GradeValue": 4,
+        "Subject": "History",
+        "Date": "2024-10-30T00:00:00",
+        "Description": "Final test",
+        "StudentId": 49
+      },
+      {
+        "Id": 130,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2025-05-14T00:00:00",
+        "Description": "Final test",
+        "StudentId": 49
+      }
+    ]
+  },
+  {
+    "Id": 50,
+    "FirstName": "David",
+    "LastName": "Wilson",
+    "Class": "F3",
+    "Grades": [
+      {
+        "Id": 131,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2025-03-20T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 50
+      },
+      {
+        "Id": 132,
+        "GradeValue": 6,
+        "Subject": "History",
+        "Date": "2025-03-03T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 50
+      },
+      {
+        "Id": 133,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2024-10-13T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 50
+      },
+      {
+        "Id": 134,
+        "GradeValue": 5,
+        "Subject": "History",
+        "Date": "2024-09-22T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 50
+      }
+    ]
+  },
+  {
+    "Id": 51,
+    "FirstName": "Susan",
+    "LastName": "Lopez",
+    "Class": "F1",
+    "Grades": [
+      {
+        "Id": 135,
+        "GradeValue": 3,
+        "Subject": "Mathematics",
+        "Date": "2024-07-16T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 51
+      }
+    ]
+  },
+  {
+    "Id": 52,
+    "FirstName": "Sarah",
+    "LastName": "Gonzalez",
+    "Class": "C4",
+    "Grades": [
+      {
+        "Id": 136,
+        "GradeValue": 4,
+        "Subject": "Mathematics",
+        "Date": "2024-12-29T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 52
+      }
+    ]
+  },
+  {
+    "Id": 53,
+    "FirstName": "Linda",
+    "LastName": "Garcia",
+    "Class": "H1",
+    "Grades": [
+      {
+        "Id": 137,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2024-09-02T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 53
+      },
+      {
+        "Id": 138,
+        "GradeValue": 3,
+        "Subject": "Physics",
+        "Date": "2025-02-16T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 53
+      }
+    ]
+  },
+  {
+    "Id": 54,
+    "FirstName": "Thomas",
+    "LastName": "Smith",
+    "Class": "C3",
+    "Grades": [
+      {
+        "Id": 139,
+        "GradeValue": 5,
+        "Subject": "English",
+        "Date": "2024-10-19T00:00:00",
+        "Description": "Final test",
+        "StudentId": 54
+      },
+      {
+        "Id": 140,
+        "GradeValue": 1,
+        "Subject": "Computer Science",
+        "Date": "2024-10-26T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 54
+      },
+      {
+        "Id": 141,
+        "GradeValue": 4,
+        "Subject": "Chemistry",
+        "Date": "2025-03-03T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 54
+      },
+      {
+        "Id": 142,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2025-04-07T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 54
+      }
+    ]
+  },
+  {
+    "Id": 55,
+    "FirstName": "Charles",
+    "LastName": "Hernandez",
+    "Class": "B2",
+    "Grades": [
+      {
+        "Id": 143,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2024-10-14T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 55
+      }
+    ]
+  },
+  {
+    "Id": 56,
+    "FirstName": "Patricia",
+    "LastName": "Jackson",
+    "Class": "B2",
+    "Grades": [
+      {
+        "Id": 144,
+        "GradeValue": 5,
+        "Subject": "Chemistry",
+        "Date": "2025-06-27T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 56
+      }
+    ]
+  },
+  {
+    "Id": 57,
+    "FirstName": "Jessica",
+    "LastName": "Wilson",
+    "Class": "A4",
+    "Grades": [
+      {
+        "Id": 145,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2024-09-29T00:00:00",
+        "Description": "Final test",
+        "StudentId": 57
+      }
+    ]
+  },
+  {
+    "Id": 58,
+    "FirstName": "Joseph",
+    "LastName": "Brown",
+    "Class": "F2",
+    "Grades": [
+      {
+        "Id": 146,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2025-06-16T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 58
+      },
+      {
+        "Id": 147,
+        "GradeValue": 4,
+        "Subject": "English",
+        "Date": "2024-11-03T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 58
+      },
+      {
+        "Id": 148,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2024-10-17T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 58
+      },
+      {
+        "Id": 149,
+        "GradeValue": 6,
+        "Subject": "Chemistry",
+        "Date": "2024-09-16T00:00:00",
+        "Description": "Final test",
+        "StudentId": 58
+      }
+    ]
+  },
+  {
+    "Id": 59,
+    "FirstName": "Elizabeth",
+    "LastName": "Martinez",
+    "Class": "F3",
+    "Grades": [
+      {
+        "Id": 150,
+        "GradeValue": 5,
+        "Subject": "Geography",
+        "Date": "2025-05-31T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 59
+      },
+      {
+        "Id": 151,
+        "GradeValue": 5,
+        "Subject": "Computer Science",
+        "Date": "2025-01-14T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 59
+      },
+      {
+        "Id": 152,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2025-05-05T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 59
+      },
+      {
+        "Id": 153,
+        "GradeValue": 3,
+        "Subject": "History",
+        "Date": "2025-05-17T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 59
+      }
+    ]
+  },
+  {
+    "Id": 60,
+    "FirstName": "Charles",
+    "LastName": "Davis",
+    "Class": "B1",
+    "Grades": [
+      {
+        "Id": 154,
+        "GradeValue": 6,
+        "Subject": "Physics",
+        "Date": "2024-09-11T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 60
+      },
+      {
+        "Id": 155,
+        "GradeValue": 5,
+        "Subject": "Chemistry",
+        "Date": "2024-09-13T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 60
+      },
+      {
+        "Id": 156,
+        "GradeValue": 6,
+        "Subject": "English",
+        "Date": "2025-01-25T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 60
+      },
+      {
+        "Id": 157,
+        "GradeValue": 6,
+        "Subject": "Physics",
+        "Date": "2024-10-04T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 60
+      }
+    ]
+  },
+  {
+    "Id": 61,
+    "FirstName": "David",
+    "LastName": "Garcia",
+    "Class": "H5",
+    "Grades": [
+      {
+        "Id": 158,
+        "GradeValue": 4,
+        "Subject": "Mathematics",
+        "Date": "2024-08-26T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 61
+      },
+      {
+        "Id": 159,
+        "GradeValue": 3,
+        "Subject": "Geography",
+        "Date": "2024-12-16T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 61
+      }
+    ]
+  },
+  {
+    "Id": 62,
+    "FirstName": "Karen",
+    "LastName": "Jackson",
+    "Class": "D4",
+    "Grades": [
+      {
+        "Id": 160,
+        "GradeValue": 1,
+        "Subject": "Physics",
+        "Date": "2024-12-14T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 62
+      }
+    ]
+  },
+  {
+    "Id": 63,
+    "FirstName": "Robert",
+    "LastName": "Taylor",
+    "Class": "C5",
+    "Grades": [
+      {
+        "Id": 161,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2024-09-03T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 63
+      },
+      {
+        "Id": 162,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2025-05-03T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 63
+      }
+    ]
+  },
+  {
+    "Id": 64,
+    "FirstName": "William",
+    "LastName": "Smith",
+    "Class": "B3",
+    "Grades": [
+      {
+        "Id": 163,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2024-08-27T00:00:00",
+        "Description": "Final test",
+        "StudentId": 64
+      }
+    ]
+  },
+  {
+    "Id": 65,
+    "FirstName": "David",
+    "LastName": "Anderson",
+    "Class": "B5",
+    "Grades": [
+      {
+        "Id": 164,
+        "GradeValue": 2,
+        "Subject": "Geography",
+        "Date": "2025-02-24T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 65
+      },
+      {
+        "Id": 165,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2025-02-08T00:00:00",
+        "Description": "Final test",
+        "StudentId": 65
+      },
+      {
+        "Id": 166,
+        "GradeValue": 5,
+        "Subject": "History",
+        "Date": "2024-07-25T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 65
+      }
+    ]
+  },
+  {
+    "Id": 66,
+    "FirstName": "Karen",
+    "LastName": "Miller",
+    "Class": "C1",
+    "Grades": [
+      {
+        "Id": 167,
+        "GradeValue": 6,
+        "Subject": "English",
+        "Date": "2024-07-30T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 66
+      },
+      {
+        "Id": 168,
+        "GradeValue": 3,
+        "Subject": "Geography",
+        "Date": "2025-04-19T00:00:00",
+        "Description": "Final test",
+        "StudentId": 66
+      },
+      {
+        "Id": 169,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2025-06-07T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 66
+      }
+    ]
+  },
+  {
+    "Id": 67,
+    "FirstName": "Sarah",
+    "LastName": "Thomas",
+    "Class": "E5",
+    "Grades": [
+      {
+        "Id": 170,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2024-10-27T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 67
+      },
+      {
+        "Id": 171,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2024-07-28T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 67
+      },
+      {
+        "Id": 172,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2025-01-20T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 67
+      }
+    ]
+  },
+  {
+    "Id": 68,
+    "FirstName": "Elizabeth",
+    "LastName": "Davis",
+    "Class": "A4",
+    "Grades": [
+      {
+        "Id": 173,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2024-07-20T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 68
+      },
+      {
+        "Id": 174,
+        "GradeValue": 3,
+        "Subject": "Mathematics",
+        "Date": "2025-05-08T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 68
+      }
+    ]
+  },
+  {
+    "Id": 69,
+    "FirstName": "Karen",
+    "LastName": "Davis",
+    "Class": "B3",
+    "Grades": [
+      {
+        "Id": 175,
+        "GradeValue": 4,
+        "Subject": "Geography",
+        "Date": "2025-05-11T00:00:00",
+        "Description": "Final test",
+        "StudentId": 69
+      },
+      {
+        "Id": 176,
+        "GradeValue": 5,
+        "Subject": "English",
+        "Date": "2024-09-28T00:00:00",
+        "Description": "Final test",
+        "StudentId": 69
+      },
+      {
+        "Id": 177,
+        "GradeValue": 3,
+        "Subject": "History",
+        "Date": "2025-06-11T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 69
+      }
+    ]
+  },
+  {
+    "Id": 70,
+    "FirstName": "William",
+    "LastName": "Garcia",
+    "Class": "B5",
+    "Grades": [
+      {
+        "Id": 178,
+        "GradeValue": 6,
+        "Subject": "Geography",
+        "Date": "2025-02-22T00:00:00",
+        "Description": "Final test",
+        "StudentId": 70
+      },
+      {
+        "Id": 179,
+        "GradeValue": 4,
+        "Subject": "English",
+        "Date": "2025-02-05T00:00:00",
+        "Description": "Final test",
+        "StudentId": 70
+      },
+      {
+        "Id": 180,
+        "GradeValue": 2,
+        "Subject": "English",
+        "Date": "2025-05-13T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 70
+      }
+    ]
+  },
+  {
+    "Id": 71,
+    "FirstName": "Elizabeth",
+    "LastName": "Davis",
+    "Class": "C1",
+    "Grades": [
+      {
+        "Id": 181,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2024-10-03T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 71
+      },
+      {
+        "Id": 182,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2024-10-01T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 71
+      },
+      {
+        "Id": 183,
+        "GradeValue": 3,
+        "Subject": "Biology",
+        "Date": "2025-02-27T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 71
+      },
+      {
+        "Id": 184,
+        "GradeValue": 6,
+        "Subject": "Geography",
+        "Date": "2024-10-31T00:00:00",
+        "Description": "Final test",
+        "StudentId": 71
+      }
+    ]
+  },
+  {
+    "Id": 72,
+    "FirstName": "Barbara",
+    "LastName": "Lopez",
+    "Class": "F4",
+    "Grades": [
+      {
+        "Id": 185,
+        "GradeValue": 4,
+        "Subject": "English",
+        "Date": "2025-02-22T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 72
+      },
+      {
+        "Id": 186,
+        "GradeValue": 2,
+        "Subject": "Chemistry",
+        "Date": "2025-04-21T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 72
+      },
+      {
+        "Id": 187,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2025-05-10T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 72
+      },
+      {
+        "Id": 188,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2024-11-11T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 72
+      }
+    ]
+  },
+  {
+    "Id": 73,
+    "FirstName": "Patricia",
+    "LastName": "Garcia",
+    "Class": "H5",
+    "Grades": [
+      {
+        "Id": 189,
+        "GradeValue": 2,
+        "Subject": "Physics",
+        "Date": "2024-08-28T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 73
+      }
+    ]
+  },
+  {
+    "Id": 74,
+    "FirstName": "William",
+    "LastName": "Hernandez",
+    "Class": "G2",
+    "Grades": [
+      {
+        "Id": 190,
+        "GradeValue": 5,
+        "Subject": "History",
+        "Date": "2024-08-09T00:00:00",
+        "Description": "Final test",
+        "StudentId": 74
+      },
+      {
+        "Id": 191,
+        "GradeValue": 2,
+        "Subject": "Biology",
+        "Date": "2024-12-16T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 74
+      },
+      {
+        "Id": 192,
+        "GradeValue": 3,
+        "Subject": "History",
+        "Date": "2024-08-27T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 74
+      },
+      {
+        "Id": 193,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2025-06-17T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 74
+      }
+    ]
+  },
+  {
+    "Id": 75,
+    "FirstName": "Robert",
+    "LastName": "Hernandez",
+    "Class": "G1",
+    "Grades": [
+      {
+        "Id": 194,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2024-12-13T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 75
+      },
+      {
+        "Id": 195,
+        "GradeValue": 6,
+        "Subject": "Geography",
+        "Date": "2025-02-15T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 75
+      },
+      {
+        "Id": 196,
+        "GradeValue": 2,
+        "Subject": "Computer Science",
+        "Date": "2025-05-07T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 75
+      },
+      {
+        "Id": 197,
+        "GradeValue": 1,
+        "Subject": "Geography",
+        "Date": "2024-09-12T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 75
+      }
+    ]
+  },
+  {
+    "Id": 76,
+    "FirstName": "Patricia",
+    "LastName": "Rodriguez",
+    "Class": "D4",
+    "Grades": [
+      {
+        "Id": 198,
+        "GradeValue": 1,
+        "Subject": "Chemistry",
+        "Date": "2024-07-14T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 76
+      },
+      {
+        "Id": 199,
+        "GradeValue": 4,
+        "Subject": "Geography",
+        "Date": "2024-07-16T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 76
+      },
+      {
+        "Id": 200,
+        "GradeValue": 2,
+        "Subject": "Biology",
+        "Date": "2025-06-30T00:00:00",
+        "Description": "Final test",
+        "StudentId": 76
+      }
+    ]
+  },
+  {
+    "Id": 77,
+    "FirstName": "Jennifer",
+    "LastName": "Davis",
+    "Class": "D3",
+    "Grades": [
+      {
+        "Id": 201,
+        "GradeValue": 6,
+        "Subject": "Computer Science",
+        "Date": "2025-06-16T00:00:00",
+        "Description": "Final test",
+        "StudentId": 77
+      },
+      {
+        "Id": 202,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2025-04-04T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 77
+      }
+    ]
+  },
+  {
+    "Id": 78,
+    "FirstName": "Jessica",
+    "LastName": "Rodriguez",
+    "Class": "A1",
+    "Grades": [
+      {
+        "Id": 203,
+        "GradeValue": 4,
+        "Subject": "Biology",
+        "Date": "2025-02-24T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 78
+      },
+      {
+        "Id": 204,
+        "GradeValue": 4,
+        "Subject": "Physics",
+        "Date": "2024-09-08T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 78
+      }
+    ]
+  },
+  {
+    "Id": 79,
+    "FirstName": "Barbara",
+    "LastName": "Martin",
+    "Class": "B1",
+    "Grades": [
+      {
+        "Id": 205,
+        "GradeValue": 2,
+        "Subject": "Physics",
+        "Date": "2024-12-07T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 79
+      }
+    ]
+  },
+  {
+    "Id": 80,
+    "FirstName": "David",
+    "LastName": "Wilson",
+    "Class": "H2",
+    "Grades": [
+      {
+        "Id": 206,
+        "GradeValue": 3,
+        "Subject": "Geography",
+        "Date": "2024-07-24T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 80
+      }
+    ]
+  },
+  {
+    "Id": 81,
+    "FirstName": "Sarah",
+    "LastName": "Davis",
+    "Class": "G1",
+    "Grades": [
+      {
+        "Id": 207,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2025-01-21T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 81
+      },
+      {
+        "Id": 208,
+        "GradeValue": 5,
+        "Subject": "Biology",
+        "Date": "2025-02-22T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 81
+      }
+    ]
+  },
+  {
+    "Id": 82,
+    "FirstName": "Elizabeth",
+    "LastName": "Lopez",
+    "Class": "E4",
+    "Grades": [
+      {
+        "Id": 209,
+        "GradeValue": 1,
+        "Subject": "English",
+        "Date": "2024-07-04T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 82
+      },
+      {
+        "Id": 210,
+        "GradeValue": 5,
+        "Subject": "Geography",
+        "Date": "2025-05-16T00:00:00",
+        "Description": "Final test",
+        "StudentId": 82
+      }
+    ]
+  },
+  {
+    "Id": 83,
+    "FirstName": "Patricia",
+    "LastName": "Martin",
+    "Class": "F5",
+    "Grades": [
+      {
+        "Id": 211,
+        "GradeValue": 6,
+        "Subject": "Biology",
+        "Date": "2025-05-11T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 83
+      }
+    ]
+  },
+  {
+    "Id": 84,
+    "FirstName": "Robert",
+    "LastName": "Davis",
+    "Class": "F3",
+    "Grades": [
+      {
+        "Id": 212,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2024-08-06T00:00:00",
+        "Description": "Final test",
+        "StudentId": 84
+      },
+      {
+        "Id": 213,
+        "GradeValue": 1,
+        "Subject": "Chemistry",
+        "Date": "2024-08-13T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 84
+      }
+    ]
+  },
+  {
+    "Id": 85,
+    "FirstName": "Patricia",
+    "LastName": "Wilson",
+    "Class": "C4",
+    "Grades": [
+      {
+        "Id": 214,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2025-04-01T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 85
+      }
+    ]
+  },
+  {
+    "Id": 86,
+    "FirstName": "Linda",
+    "LastName": "Gonzalez",
+    "Class": "E3",
+    "Grades": [
+      {
+        "Id": 215,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2024-07-15T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 86
+      }
+    ]
+  },
+  {
+    "Id": 87,
+    "FirstName": "John",
+    "LastName": "Anderson",
+    "Class": "E2",
+    "Grades": [
+      {
+        "Id": 216,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2024-11-25T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 87
+      },
+      {
+        "Id": 217,
+        "GradeValue": 5,
+        "Subject": "Mathematics",
+        "Date": "2024-07-05T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 87
+      }
+    ]
+  },
+  {
+    "Id": 88,
+    "FirstName": "Susan",
+    "LastName": "Johnson",
+    "Class": "C5",
+    "Grades": [
+      {
+        "Id": 218,
+        "GradeValue": 2,
+        "Subject": "History",
+        "Date": "2024-12-21T00:00:00",
+        "Description": "Final test",
+        "StudentId": 88
+      },
+      {
+        "Id": 219,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2025-01-13T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 88
+      },
+      {
+        "Id": 220,
+        "GradeValue": 4,
+        "Subject": "Physics",
+        "Date": "2024-10-11T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 88
+      },
+      {
+        "Id": 221,
+        "GradeValue": 3,
+        "Subject": "English",
+        "Date": "2024-10-18T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 88
+      }
+    ]
+  },
+  {
+    "Id": 89,
+    "FirstName": "Sarah",
+    "LastName": "Lopez",
+    "Class": "A3",
+    "Grades": [
+      {
+        "Id": 222,
+        "GradeValue": 3,
+        "Subject": "Geography",
+        "Date": "2024-10-29T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 89
+      },
+      {
+        "Id": 223,
+        "GradeValue": 5,
+        "Subject": "Chemistry",
+        "Date": "2024-11-16T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 89
+      }
+    ]
+  },
+  {
+    "Id": 90,
+    "FirstName": "William",
+    "LastName": "Thomas",
+    "Class": "E1",
+    "Grades": [
+      {
+        "Id": 224,
+        "GradeValue": 1,
+        "Subject": "Computer Science",
+        "Date": "2024-07-07T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 90
+      }
+    ]
+  },
+  {
+    "Id": 91,
+    "FirstName": "Elizabeth",
+    "LastName": "Jackson",
+    "Class": "G5",
+    "Grades": [
+      {
+        "Id": 225,
+        "GradeValue": 6,
+        "Subject": "Mathematics",
+        "Date": "2025-02-13T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 91
+      },
+      {
+        "Id": 226,
+        "GradeValue": 6,
+        "Subject": "English",
+        "Date": "2024-12-17T00:00:00",
+        "Description": "Final test",
+        "StudentId": 91
+      },
+      {
+        "Id": 227,
+        "GradeValue": 2,
+        "Subject": "History",
+        "Date": "2024-08-26T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 91
+      }
+    ]
+  },
+  {
+    "Id": 92,
+    "FirstName": "Susan",
+    "LastName": "Lopez",
+    "Class": "D4",
+    "Grades": [
+      {
+        "Id": 228,
+        "GradeValue": 4,
+        "Subject": "History",
+        "Date": "2024-12-14T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 92
+      },
+      {
+        "Id": 229,
+        "GradeValue": 1,
+        "Subject": "Physics",
+        "Date": "2025-03-07T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 92
+      }
+    ]
+  },
+  {
+    "Id": 93,
+    "FirstName": "Susan",
+    "LastName": "Gonzalez",
+    "Class": "A3",
+    "Grades": [
+      {
+        "Id": 230,
+        "GradeValue": 4,
+        "Subject": "Biology",
+        "Date": "2025-02-03T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 93
+      },
+      {
+        "Id": 231,
+        "GradeValue": 6,
+        "Subject": "English",
+        "Date": "2025-05-28T00:00:00",
+        "Description": "Final test",
+        "StudentId": 93
+      },
+      {
+        "Id": 232,
+        "GradeValue": 6,
+        "Subject": "Chemistry",
+        "Date": "2024-09-24T00:00:00",
+        "Description": "Final test",
+        "StudentId": 93
+      },
+      {
+        "Id": 233,
+        "GradeValue": 4,
+        "Subject": "History",
+        "Date": "2024-07-11T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 93
+      }
+    ]
+  },
+  {
+    "Id": 94,
+    "FirstName": "Mary",
+    "LastName": "Williams",
+    "Class": "D1",
+    "Grades": [
+      {
+        "Id": 234,
+        "GradeValue": 1,
+        "Subject": "History",
+        "Date": "2024-11-25T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 94
+      },
+      {
+        "Id": 235,
+        "GradeValue": 2,
+        "Subject": "Physics",
+        "Date": "2024-09-30T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 94
+      },
+      {
+        "Id": 236,
+        "GradeValue": 4,
+        "Subject": "Chemistry",
+        "Date": "2025-06-26T00:00:00",
+        "Description": "Final test",
+        "StudentId": 94
+      },
+      {
+        "Id": 237,
+        "GradeValue": 5,
+        "Subject": "Computer Science",
+        "Date": "2024-11-19T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 94
+      }
+    ]
+  },
+  {
+    "Id": 95,
+    "FirstName": "James",
+    "LastName": "Jackson",
+    "Class": "G5",
+    "Grades": [
+      {
+        "Id": 238,
+        "GradeValue": 5,
+        "Subject": "Geography",
+        "Date": "2025-04-19T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 95
+      },
+      {
+        "Id": 239,
+        "GradeValue": 1,
+        "Subject": "Biology",
+        "Date": "2024-10-06T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 95
+      },
+      {
+        "Id": 240,
+        "GradeValue": 2,
+        "Subject": "Physics",
+        "Date": "2024-11-29T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 95
+      }
+    ]
+  },
+  {
+    "Id": 96,
+    "FirstName": "Patricia",
+    "LastName": "Taylor",
+    "Class": "G3",
+    "Grades": [
+      {
+        "Id": 241,
+        "GradeValue": 2,
+        "Subject": "Geography",
+        "Date": "2024-11-09T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 96
+      }
+    ]
+  },
+  {
+    "Id": 97,
+    "FirstName": "Robert",
+    "LastName": "Thomas",
+    "Class": "G4",
+    "Grades": [
+      {
+        "Id": 242,
+        "GradeValue": 3,
+        "Subject": "Mathematics",
+        "Date": "2024-12-18T00:00:00",
+        "Description": "Midterm exam",
+        "StudentId": 97
+      },
+      {
+        "Id": 243,
+        "GradeValue": 2,
+        "Subject": "Mathematics",
+        "Date": "2025-04-21T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 97
+      }
+    ]
+  },
+  {
+    "Id": 98,
+    "FirstName": "Charles",
+    "LastName": "Jackson",
+    "Class": "G4",
+    "Grades": [
+      {
+        "Id": 244,
+        "GradeValue": 5,
+        "Subject": "Geography",
+        "Date": "2024-09-08T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 98
+      },
+      {
+        "Id": 245,
+        "GradeValue": 5,
+        "Subject": "Physics",
+        "Date": "2024-09-18T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 98
+      },
+      {
+        "Id": 246,
+        "GradeValue": 3,
+        "Subject": "Computer Science",
+        "Date": "2024-08-05T00:00:00",
+        "Description": "Final test",
+        "StudentId": 98
+      },
+      {
+        "Id": 247,
+        "GradeValue": 6,
+        "Subject": "Biology",
+        "Date": "2025-06-07T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 98
+      }
+    ]
+  },
+  {
+    "Id": 99,
+    "FirstName": "Sarah",
+    "LastName": "Williams",
+    "Class": "H4",
+    "Grades": [
+      {
+        "Id": 248,
+        "GradeValue": 3,
+        "Subject": "Mathematics",
+        "Date": "2025-01-14T00:00:00",
+        "Description": "Homework assignment",
+        "StudentId": 99
+      },
+      {
+        "Id": 249,
+        "GradeValue": 6,
+        "Subject": "English",
+        "Date": "2025-05-05T00:00:00",
+        "Description": "Lab report",
+        "StudentId": 99
+      },
+      {
+        "Id": 250,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2025-04-30T00:00:00",
+        "Description": "Final test",
+        "StudentId": 99
+      },
+      {
+        "Id": 251,
+        "GradeValue": 3,
+        "Subject": "Chemistry",
+        "Date": "2025-03-31T00:00:00",
+        "Description": "Quiz",
+        "StudentId": 99
+      }
+    ]
+  },
+  {
+    "Id": 100,
+    "FirstName": "William",
+    "LastName": "Jones",
+    "Class": "G5",
+    "Grades": [
+      {
+        "Id": 252,
+        "GradeValue": 4,
+        "Subject": "Physics",
+        "Date": "2024-11-28T00:00:00",
+        "Description": "Project presentation",
+        "StudentId": 100
+      }
+    ]
   }
-]
+] 
