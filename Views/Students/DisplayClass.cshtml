@@ -1,17 +1,45 @@
 ﻿@model List<GradeBook.Models.Student>
+@using GradeBook.Models
+@using GradeBook.Services
+@{
+    var role = Context.Session.GetString("Role");
+    var userEmail = Context.Session.GetString("Email");
+    string className = ViewBag.ClassName;
+    
+    List<User> users = null;
+    User currentUser = null;
+    int? studentIdForCurrentUser = null;
+    
+    if (role == "Manager")
+    {
+        users = UserJsonService.LoadUsers();
+    }
+    
+    if (role == "Student" && !string.IsNullOrEmpty(userEmail))
+    {
+        var allUsers = UserJsonService.LoadUsers();
+        currentUser = allUsers.FirstOrDefault(u => u.Email == userEmail);
+        studentIdForCurrentUser = currentUser?.StudentId;
+    }
+}
 <head>
     <meta charset="utf-8" />
-    <title>GradeBook</title>
+    <title>GradeBook - Class @className</title>
     <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
     <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
 </head>
 <body>
     <div id="jumper">ඞ</div>
     <main>
-        <h2>Students List</h2>
+        <h2>Students in Class @className</h2>
         <ul>
             @foreach (var student in Model)
             {
+                if (role == "Student" && studentIdForCurrentUser != student.Id)
+                {
+                    continue;
+                }
+                
                 var grades = student.Grades ?? new List<GradeBook.Models.Grade>();
                 var hasGrades = grades.Any();
                 var avg = hasGrades ? grades.Average(g => g.GradeValue) : 0;
@@ -33,9 +61,12 @@
                 </li>
             }
         </ul>
-        <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
+        <a href="@Url.Action("TeacherMain", "Students")">Back to classes list</a>
+        @if (role == "Teacher")
+        {
+            <a href="@Url.Action("AddStudent", "Students")">Add New Student</a>
+        }
     </main>
 </body>
 <script src="@Url.Content("~/js/jumper.js")"></script>
 <script src="@Url.Content("~/js/gradeColor.js")"></script>
-

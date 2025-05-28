@@ -1,0 +1,31 @@
+﻿@model List<string>
+@using GradeBook.Models
+@using GradeBook.Services
+@{
+    var role = Context.Session.GetString("Role");
+}
+<head>
+    <meta charset="utf-8" />
+    <title>GradeBook - Classes</title>
+    <link rel="stylesheet" href="@Url.Content("~/css/style.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/jumper.css")" />
+</head>
+<body>
+    <div id="jumper">ඞ</div>
+    <main>
+        <h2>Classes List</h2>
+        <ul>
+            @foreach (var className in Model)
+            {
+                <li>
+                    <a href="@Url.Action("DisplayClass", "Students", new { className = className })">
+                        Class: @className
+                    </a>
+                </li>
+            }
+        </ul>
+        
+        
+    </main>
+</body>
+<script src="@Url.Content("~/js/jumper.js")"></script>

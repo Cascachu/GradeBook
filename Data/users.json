@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 1,
+    "Email": "kaper@mail.com",
+    "PasswordHash": "bztaBZoCryD2kkrr4I94jGY16j4a4DXcrpnX7f1Ebd4=",
+    "Role": "Teacher",
+    "StudentId": null
+  },
+  {
+    "Id": 2,
+    "Email": "kapi@mail.com",
+    "PasswordHash": "WBLuUKcOY\u002B8A5wuOSySRkpKNRgGHgfMWzCFXiUECKw0=",
+    "Role": "Student",
+    "StudentId": 3
+  },
+  {
+    "Id": 3,
+    "Email": "kacper@mail.com",
+    "PasswordHash": "bztaBZoCryD2kkrr4I94jGY16j4a4DXcrpnX7f1Ebd4=",
+    "Role": "Manager",
+    "StudentId": null
+  },
+  {
+    "Id": 4,
+    "Email": "micha@mail.com",
+    "PasswordHash": "WBLuUKcOY\u002B8A5wuOSySRkpKNRgGHgfMWzCFXiUECKw0=",
+    "Role": "Student",
+    "StudentId": 5
+  },
+  {
+    "Id": 5,
+    "Email": "Admin@mail.com",
+    "PasswordHash": "jGl25bVBBBW96Qi9Te4V37Fnqchz/Eu4qB9vKrRIqRg=",
+    "Role": "Manager",
+    "StudentId": null
+  },
+  {
+    "Id": 6,
+    "Email": "John@mail.com",
+    "PasswordHash": "ltljLzY1ZMwwMlIUCc8iqFLyAy7sCZ7VlnwNAAzsYHo=",
+    "Role": "Guest",
+    "StudentId": null
+  }
+]
