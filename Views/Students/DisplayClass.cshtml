@@ -12,12 +12,12 @@
     
     if (role == "Manager")
     {
-        users = UserJsonService.LoadUsers();
+        users = ViewBag.Users as List<User>;
     }
     
     if (role == "Student" && !string.IsNullOrEmpty(userEmail))
     {
-        var allUsers = UserJsonService.LoadUsers();
+        var allUsers = ViewBag.Users as List<User>;
         currentUser = allUsers.FirstOrDefault(u => u.Email == userEmail);
         studentIdForCurrentUser = currentUser?.StudentId;
     }
